@@ -1,0 +1,6 @@
+@WebRoadsApi_HostAddress = http://localhost:5151
+
+GET {{WebRoadsApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

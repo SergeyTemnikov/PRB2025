@@ -1,0 +1,34 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WebRoadsApi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/Departament/GetDepartaments": {
+      "get": {
+        "tags": [
+          "Departament"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Departament/GetSubDepartaments": {
+      "get": {
+        "tags": [
+          "Departament"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

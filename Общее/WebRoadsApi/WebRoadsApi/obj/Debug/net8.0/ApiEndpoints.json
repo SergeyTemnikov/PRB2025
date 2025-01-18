@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "WebRoadsApi.Controllers.DepartamentController",
+    "Method": "GetDepartaments",
+    "RelativePath": "Departament/GetDepartaments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebRoadsApi.Controllers.DepartamentController",
+    "Method": "GetSubDepartaments",
+    "RelativePath": "Departament/GetSubDepartaments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

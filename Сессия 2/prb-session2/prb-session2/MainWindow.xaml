@@ -1,0 +1,51 @@
+﻿<Window x:Class="prb_session2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prb_session2"
+        mc:Ignorable="d"
+        Title="Сессия 2" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Resources>
+        <SolidColorBrush x:Key="gridBackground" Color="#89FC43" Opacity="0.50"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="{StaticResource gridBackground}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" Width="70" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#78B24B" CornerRadius="50">
+                <TextBlock Text="логотип" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Center" FontSize="14"/>
+            </Border>
+
+            <Border Grid.Column="1" Width="500" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center" Background="White" CornerRadius="15" Margin="20">
+                <TextBlock Text="Организационная структура" TextAlignment="Center" HorizontalAlignment="Left" Margin="25 0" VerticalAlignment="Center" FontSize="14"/>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Canvas Name="graphCanvas" Grid.Column="1" Grid.Row="1"/>
+        </Grid>
+        
+    </Grid>
+</Window>

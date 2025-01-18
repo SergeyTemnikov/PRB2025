@@ -1,0 +1,74 @@
+[
+  {
+    "ContainingType": "WebApiNews.Controllers.NewsController",
+    "Method": "GetBirthdays",
+    "RelativePath": "BirthdayApi/GetBirthdays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiNews.Controllers.NewsController",
+    "Method": "GetEvents",
+    "RelativePath": "WebApiNews/GetEvents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiNews.Controllers.NewsController",
+    "Method": "GetNews",
+    "RelativePath": "WebApiNews/GetNews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiNews.Controllers.NewsController",
+    "Method": "PostNegativeReactions",
+    "RelativePath": "WebApiNews/PostNegativeReactions",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiNews.Controllers.NewsController",
+    "Method": "PostPositiveReactions",
+    "RelativePath": "WebApiNews/PostPositiveReactions",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiNews.Controllers.NewsController",
+    "Method": "PostNews",
+    "RelativePath": "WebNewsApi/AddNews",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

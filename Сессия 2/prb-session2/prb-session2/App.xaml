@@ -1,0 +1,9 @@
+﻿<Application x:Class="prb_session2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:prb_session2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="mainBackground" Color="#89FC43" Opacity="50"/>
+    </Application.Resources>
+</Application>
