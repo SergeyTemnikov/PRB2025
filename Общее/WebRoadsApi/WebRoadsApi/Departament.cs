@@ -9,6 +9,8 @@ public partial class Departament
 
     public string NameDepartament { get; set; } = null!;
 
+    public int? LevelDepartament { get; set; }
+
     public virtual ICollection<SubDepartament> SubDepartamentIdDaughterDepartamentNavigations { get; set; } = new List<SubDepartament>();
 
     public virtual ICollection<SubDepartament> SubDepartamentIdDepartamentNavigations { get; set; } = new List<SubDepartament>();

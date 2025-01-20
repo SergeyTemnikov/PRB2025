@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\satem\\source\\repos\\WebRoadsApi\\",
+  "WorkspaceRootPath": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\source\\repos\\webroadsapi\\webroadsapi\\departament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\desktop\\prb\\\u043E\u0431\u0449\u0435\u0435\\webroadsapi\\webroadsapi\\departament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|solutionrelative:webroadsapi\\departament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\source\\repos\\webroadsapi\\webroadsapi\\controllers\\departamentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\desktop\\prb\\\u043E\u0431\u0449\u0435\u0435\\webroadsapi\\webroadsapi\\data\\roadscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|solutionrelative:webroadsapi\\data\\roadscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\desktop\\prb\\\u043E\u0431\u0449\u0435\u0435\\webroadsapi\\webroadsapi\\controllers\\departamentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|solutionrelative:webroadsapi\\controllers\\departamentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,30 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoadsContext.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Data\\RoadsContext.cs",
+              "RelativeDocumentMoniker": "WebRoadsApi\\Data\\RoadsContext.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Data\\RoadsContext.cs",
+              "RelativeToolTip": "WebRoadsApi\\Data\\RoadsContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T06:45:21.569Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Departament.cs",
-              "DocumentMoniker": "C:\\Users\\satem\\source\\repos\\WebRoadsApi\\WebRoadsApi\\Departament.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Departament.cs",
               "RelativeDocumentMoniker": "WebRoadsApi\\Departament.cs",
-              "ToolTip": "C:\\Users\\satem\\source\\repos\\WebRoadsApi\\WebRoadsApi\\Departament.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Departament.cs",
               "RelativeToolTip": "WebRoadsApi\\Departament.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-18T11:33:52.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DepartamentController.cs",
-              "DocumentMoniker": "C:\\Users\\satem\\source\\repos\\WebRoadsApi\\WebRoadsApi\\Controllers\\DepartamentController.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Controllers\\DepartamentController.cs",
               "RelativeDocumentMoniker": "WebRoadsApi\\Controllers\\DepartamentController.cs",
-              "ToolTip": "C:\\Users\\satem\\source\\repos\\WebRoadsApi\\WebRoadsApi\\Controllers\\DepartamentController.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Controllers\\DepartamentController.cs",
               "RelativeToolTip": "WebRoadsApi\\Controllers\\DepartamentController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwDEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwCgAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-18T11:03:47.876Z",
               "EditorCaption": ""

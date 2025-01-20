@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:prb_session2"
         mc:Ignorable="d"
-        Title="Сессия 2" Height="450" Width="800" ResizeMode="NoResize">
+        Title="Сессия 2" Height="700" Width="1200" ResizeMode="NoResize"
+        Loaded="Window_Loaded">
     <Window.Resources>
         <SolidColorBrush x:Key="gridBackground" Color="#89FC43" Opacity="0.50"/>
     </Window.Resources>
@@ -44,7 +45,9 @@
                 <RowDefinition/>
                 <RowDefinition Height="20"/>
             </Grid.RowDefinitions>
-            <Canvas Name="graphCanvas" Grid.Column="1" Grid.Row="1"/>
+            <ScrollViewer Grid.Column="1" Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Background="LightGray">
+                <Canvas Name="graphCanvas" HorizontalAlignment="Center" VerticalAlignment="Top" />    
+            </ScrollViewer>
         </Grid>
         
     </Grid>

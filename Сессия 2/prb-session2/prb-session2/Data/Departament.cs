@@ -10,5 +10,6 @@ namespace prb_session2.Data
     {
         public int IdDepartament { get; set; }
         public string NameDepartament { get; set; }
+        public int LevelDepartament { get; set; }
     }
 }

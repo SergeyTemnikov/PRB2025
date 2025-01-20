@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w8MajB+Z6+k=",
+  "dgSpecHash": "NnI7ZVSfa24=",
   "success": true,
-  "projectFilePath": "C:\\Users\\satem\\source\\repos\\WebRoadsApi\\WebRoadsApi\\WebRoadsApi.csproj",
+  "projectFilePath": "C:\\Users\\satem\\Desktop\\PRB\\Общее\\WebRoadsApi\\WebRoadsApi\\WebRoadsApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\satem\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\satem\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
