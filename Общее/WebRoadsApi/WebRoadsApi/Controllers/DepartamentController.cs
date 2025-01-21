@@ -31,19 +31,5 @@ namespace WebRoadsApi.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-        [Route("/Departament/GetSubDepartaments")]
-        [HttpGet]
-        public IActionResult GetSubDepartaments()
-        {
-            try
-            {
-                return Ok(JsonConvert.SerializeObject(_db.SubDepartaments.ToList(), settings));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
     }
 }

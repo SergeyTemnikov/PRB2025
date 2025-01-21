@@ -15,6 +15,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Newtonsoft.Json;
+using prb_session2.ModelHelpers;
+using System.Reflection.Emit;
 
 namespace prb_session2
 {
@@ -25,18 +27,21 @@ namespace prb_session2
     {
         private HttpClient _httpClient = new HttpClient();
         private List<Departament> _departaments;
-        private List<SubDepartament> _subDepartaments;
+        private List<GraphElement> _graphElements;
 
         public MainWindow()
         {
             InitializeComponent();
+            _graphElements = new List<GraphElement>();
         }
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
             await GetData();
             //GraphDrawing();
-            GraphDrawingI();
+            //GraphDrawingI();
+            ParseDataToElements();
+            ElementDrawing();
         }
 
         private async Task GetData()
@@ -52,191 +57,106 @@ namespace prb_session2
             }
         }
 
-        private void GraphDrawing()
+        private void ParseDataToElements()
         {
-            Dictionary<int, List<Departament>> departamnetLevels = new Dictionary<int, List<Departament>>();
+            GraphElement.LevelsCount = 0;
+            var elementDict = new Dictionary<int, GraphElement>();
 
-            foreach(var departament in _departaments)
+            // Создаем элементы графа и добавляем их в словарь
+            foreach (var departament in _departaments)
             {
-                if (!departamnetLevels.ContainsKey(departament.LevelDepartament)) departamnetLevels[departament.LevelDepartament] = new List<Departament>() { departament };
-                else {
-                    departamnetLevels[departament.LevelDepartament].Add(departament);
-                }
-            }
-
-            var rectangleHeight = 40;
-            var rectangleWidth = 200;
-
-            var levelsCount = departamnetLevels.Count;
-            var height = levelsCount * rectangleHeight + ((levelsCount + (levelsCount - 1)) * 10);
-
-            var maxLevelSize = departamnetLevels.Values.Max(x => x.Count);
-            var width = maxLevelSize * rectangleWidth + ((maxLevelSize + (maxLevelSize - 1)) * 10);
-
-            graphCanvas.Height = height;
-            graphCanvas.Width = width;
-
-            foreach(var levels in departamnetLevels)
-            {
-                var departaments = levels.Value;
-                var center = width / 2;
-                var rectanglesCount = departaments.Count;
-                var rectangles = center - (rectanglesCount * (rectangleWidth / 2));
-                var startPosition = rectanglesCount == 1 ? rectangles : rectangles - (rectanglesCount * 10);
-                var topPosition = (levels.Key) * rectangleHeight + ((levels.Key + 1) * 10);
-                 
-                for(int i = 0; i < departaments.Count; i++)
+                var element = new GraphElement()
                 {
-                    Button btnDepartament = new Button();
-                    btnDepartament.Height = rectangleHeight;
-                    btnDepartament.Width = rectangleWidth;
-                    btnDepartament.Style = (Style)Application.Current.FindResource("btnStyle");
-                    btnDepartament.Content = departaments[i].NameDepartament;
-
-                    var leftPosition = rectangles + (rectangleWidth * i + 10 * i);
-
-                    Canvas.SetLeft(btnDepartament, leftPosition);
-                    Canvas.SetTop(btnDepartament, topPosition);
-
-                    graphCanvas.Children.Add(btnDepartament);
-                }
+                    Parent = departament,
+                    Children = new List<GraphElement>()
+                };
+                _graphElements.Add(element);
+                elementDict[departament.IdDepartament] = element; // Сохраняем элемент по IdDepartament
             }
-        }
-
-        private void GraphDrawingI()
-        {
-            Dictionary<int, List<Departament>> departamnetLevels = new Dictionary<int, List<Departament>>();
-            Dictionary<int, List<int>> subDepartaments = new Dictionary<int, List<int>>();
 
             foreach (var departament in _departaments)
             {
-                if (!departamnetLevels.ContainsKey(departament.LevelDepartament)) departamnetLevels[departament.LevelDepartament] = new List<Departament>() { departament };
-                else
+                if (departament.IdParentDepartament != null)
                 {
-                    departamnetLevels[departament.LevelDepartament].Add(departament);
-                }
-            }
-
-            foreach(var d in _subDepartaments)
-            {
-                if (!subDepartaments.ContainsKey(d.IdMainDepartament)) subDepartaments[d.IdMainDepartament] = new List<int>() { d.IdDaughterDepartament };
-                else
-                {
-                    subDepartaments[d.IdMainDepartament].Add(d.IdDaughterDepartament);
-                }
-            }
-
-            var rectangleHeight = 40;
-            var rectangleWidth = 200;
-
-            var levelsCount = departamnetLevels.Count;
-            var height = levelsCount * rectangleHeight + ((levelsCount + (levelsCount - 1)) * 10);
-
-            var maxLevelSize = departamnetLevels.Values.Max(x => x.Count);
-            var width = maxLevelSize * rectangleWidth + ((maxLevelSize + (maxLevelSize - 1)) * 10);
-
-            graphCanvas.Height = height;
-            graphCanvas.Width = width;
-
-            Deec(subDepartaments,departamnetLevels,width/2);
-
-
-
-
-            //foreach (var levels in departamnetLevels)
-            //{
-            //    var departaments = levels.Value;
-            //    var center = width / 2;
-            //    var rectanglesCount = departaments.Count;
-            //    var rectangles = center - (rectanglesCount * (rectangleWidth / 2));
-            //    var startPosition = rectanglesCount == 1 ? rectangles : rectangles - (rectanglesCount * 10);
-            //    var topPosition = (levels.Key) * rectangleHeight + ((levels.Key + 1) * 10);
-
-            //    for (int i = 0; i < departaments.Count; i++)
-            //    {
-            //        Button btnDepartament = new Button();
-            //        btnDepartament.Height = rectangleHeight;
-            //        btnDepartament.Width = rectangleWidth;
-            //        btnDepartament.Style = (Style)Application.Current.FindResource("btnStyle");
-            //        btnDepartament.Content = departaments[i].NameDepartament;
-
-            //        var leftPosition = rectangles + (rectangleWidth * i + 10 * i);
-
-            //        Canvas.SetLeft(btnDepartament, leftPosition);
-            //        Canvas.SetTop(btnDepartament, topPosition);
-
-            //        graphCanvas.Children.Add(btnDepartament);
-            //    }
-            //}
-        }
-
-        private void Deec(Dictionary<int, List<int>> listD, Dictionary<int,List<Departament>> listDLevel, int center)
-        {
-
-            var rectangleHeight = 40;
-            var rectangleWidth = 200;
-
-
-            var levelsCount = listDLevel.Count;
-            var height = levelsCount * rectangleHeight + ((levelsCount + (levelsCount - 1)) * 10);
-
-
-            var maxLevelSize = listDLevel.Values.Max(x => x.Count);
-            var width = maxLevelSize * rectangleWidth + ((maxLevelSize + (maxLevelSize - 1)) * 10);
-
-
-            graphCanvas.Height = height;
-            graphCanvas.Width = width;
-
-
-
-            var topPosition = (levels.Key) * rectangleHeight + ((levels.Key + 1) * 10);
-
-            List<int> keys = listDLevel.Keys.ToList();
-
-            foreach(var key in keys)
-            {
-                foreach(var values in listDLevel[key])
-                {
-                    foreach()
+                    if (elementDict.TryGetValue(departament.IdParentDepartament.Value, out var parentElement))
                     {
-
+                        if(parentElement.Children.Count == 0)
+                        {
+                            GraphElement.LevelsCount++;
+                        }
+                        parentElement.Children.Add(elementDict[departament.IdDepartament]); 
                     }
-
-                    Button btnDepartament = new Button();
-
-                    // Размеры кнопки
-                    btnDepartament.Height = rectangleHeight;
-                    btnDepartament.Width = rectangleWidth;
-
-                    btnDepartament.Style = (Style)Application.Current.FindResource("btnStyle");
-
-                    //Данные в кнопке
-                    btnDepartament.Content = listDLevel.First(x => x.Value == key).NameDepartament;
-
-                    //Позиция кнопки
-                    var rectangles = center - (rectanglesCount * (rectangleWidth / 2));
-                    var leftPosition = rectangles + (rectangleWidth * i + 10 * i);
-
-
-
-                    Canvas.SetLeft(btnDepartament, leftPosition);
-                    Canvas.SetTop(btnDepartament, topPosition);
-
-                    graphCanvas.Children.Add(btnDepartament);
-
-
-
                 }
-
+                else
+                {
+                    GraphElement.LevelsCount++; 
+                }
             }
 
-          
-
-
+            foreach (var element in _graphElements.Where(e => e.Parent.IdParentDepartament == null))
+            {
+                SetLevel(element, 1);
             }
-
         }
+
+        private void SetLevel(GraphElement element, int level)
+        {
+            element.Level = level;
+
+            foreach (var child in element.Children)
+            {
+                SetLevel(child, level + 1);
+            }
+        }
+
+
+        private void ElementDrawing()
+        {
+            GraphElement.HeightElement = 40;
+            GraphElement.WidthElement = 200;
+            GraphElement.ElementSpace = 20;
+
+            var levelWidths = new Dictionary<int, int>();
+
+            foreach (var element in _graphElements)
+            {
+                if (!levelWidths.ContainsKey(element.Level))
+                {
+                    levelWidths[element.Level] = 0;
+                }
+                int elementWidth = element.Width;
+
+                if (elementWidth > levelWidths[element.Level])
+                {
+                    levelWidths[element.Level] = elementWidth;
+                } else
+                {
+                    levelWidths[element.Level] += 20 + elementWidth;
+                }
+            }
+
+            int totalWidth = levelWidths.Values.Sum() + (levelWidths.Count - 1) * GraphElement.ElementSpace;
+
+            graphCanvas.Height = GraphElement.Height;
+            graphCanvas.Width = totalWidth + GraphElement.ElementSpace * 2;
+
+            graphCanvas.Children.Clear();
+
+            foreach (var element in _graphElements)
+            {
+                Button btnDepartament = new Button();
+                btnDepartament.Height = GraphElement.HeightElement;
+                btnDepartament.Width = GraphElement.WidthElement;
+                btnDepartament.Style = (Style)Application.Current.FindResource("btnStyle");
+                btnDepartament.Content = element.Parent.NameDepartament;
+
+                Canvas.SetLeft(btnDepartament, element.GetXPosition(_graphElements, levelWidths, (int)graphCanvas.Width));
+                Canvas.SetTop(btnDepartament, element.GetYPosition());
+
+                graphCanvas.Children.Add(btnDepartament);
+            }
+        }
+
 
     }
 }

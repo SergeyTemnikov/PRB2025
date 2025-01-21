@@ -16,18 +16,6 @@
           }
         }
       }
-    },
-    "/Departament/GetSubDepartaments": {
-      "get": {
-        "tags": [
-          "Departament"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
     }
   },
   "components": { }

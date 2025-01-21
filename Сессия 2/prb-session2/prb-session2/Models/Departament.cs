@@ -9,7 +9,10 @@ namespace prb_session2.Data
     public class Departament
     {
         public int IdDepartament { get; set; }
+
         public string NameDepartament { get; set; }
-        public int LevelDepartament { get; set; }
+
+        public int? IdParentDepartament { get; set; }
+
     }
 }
