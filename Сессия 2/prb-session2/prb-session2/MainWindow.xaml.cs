@@ -28,20 +28,21 @@ namespace prb_session2
         private HttpClient _httpClient = new HttpClient();
         private List<Departament> _departaments;
         private List<GraphElement> _graphElements;
+        private List<Button> _canvasButtons;
 
         public MainWindow()
         {
             InitializeComponent();
             _graphElements = new List<GraphElement>();
+            _canvasButtons = new List<Button>();
         }
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
             await GetData();
-            //GraphDrawing();
-            //GraphDrawingI();
             ParseDataToElements();
             ElementDrawing();
+            LineDrawing(0);
         }
 
         private async Task GetData()
@@ -62,7 +63,6 @@ namespace prb_session2
             GraphElement.LevelsCount = 0;
             var elementDict = new Dictionary<int, GraphElement>();
 
-            // Создаем элементы графа и добавляем их в словарь
             foreach (var departament in _departaments)
             {
                 var element = new GraphElement()
@@ -71,7 +71,7 @@ namespace prb_session2
                     Children = new List<GraphElement>()
                 };
                 _graphElements.Add(element);
-                elementDict[departament.IdDepartament] = element; // Сохраняем элемент по IdDepartament
+                elementDict[departament.IdDepartament] = element;
             }
 
             foreach (var departament in _departaments)
@@ -114,7 +114,7 @@ namespace prb_session2
         {
             GraphElement.HeightElement = 40;
             GraphElement.WidthElement = 200;
-            GraphElement.ElementSpace = 20;
+            GraphElement.ElementSpace = 40;
 
             var levelWidths = new Dictionary<int, int>();
 
@@ -126,7 +126,7 @@ namespace prb_session2
                 }
                 int elementWidth = element.Width;
 
-                if (elementWidth > levelWidths[element.Level])
+                if (levelWidths[element.Level] == 0)
                 {
                     levelWidths[element.Level] = elementWidth;
                 } else
@@ -135,7 +135,7 @@ namespace prb_session2
                 }
             }
 
-            int totalWidth = levelWidths.Values.Sum() + (levelWidths.Count - 1) * GraphElement.ElementSpace;
+            int totalWidth = levelWidths.Values.Max();
 
             graphCanvas.Height = GraphElement.Height;
             graphCanvas.Width = totalWidth + GraphElement.ElementSpace * 2;
@@ -153,10 +153,81 @@ namespace prb_session2
                 Canvas.SetLeft(btnDepartament, element.GetXPosition(_graphElements, levelWidths, (int)graphCanvas.Width));
                 Canvas.SetTop(btnDepartament, element.GetYPosition());
 
+                _canvasButtons.Add(btnDepartament);
+
                 graphCanvas.Children.Add(btnDepartament);
             }
         }
 
+        private void LineDrawing(int index)
+        {
+            if(index == _graphElements.Count)
+            {
+                return;
+            }
+            var element = _graphElements[index];
+            foreach (var children  in _graphElements[index].Children)
+            {
+                var parent = _canvasButtons.Where(x => x.Content == element.Parent.NameDepartament).FirstOrDefault();
+                if (parent == default)
+                {
+                    return;
+                }
+                var XParent = Canvas.GetLeft(parent) + GraphElement.WidthElement / 2;
+                var YParent = Canvas.GetTop(parent) + GraphElement.HeightElement;
 
+                var child = _canvasButtons.Where(x => x.Content == children.Parent.NameDepartament).FirstOrDefault();
+                if (child == default)
+                {
+                    return;
+                }
+                var XChild = Canvas.GetLeft(child) + GraphElement.WidthElement / 2;
+                var YChild = Canvas.GetTop(child);
+
+                Line mainLine = new Line()
+                {
+                    X1 = XParent,
+                    Y1 = YParent,
+                    X2 = XChild,
+                    Y2 = YChild - 5,
+                    Stroke = Brushes.Black,
+                    StrokeThickness = 1,
+                };
+
+                PointCollection points = new PointCollection();
+                points.Add(new Point()
+                {
+                    X = XChild,
+                    Y = YChild,
+                });
+                points.Add(new Point()
+                {
+                    X = XChild - 5,
+                    Y = YChild - 5,
+                });
+                points.Add(new Point()
+                {
+                    X = XChild + 5,
+                    Y = YChild - 5,
+                });
+                points.Add(new Point()
+                {
+                    X = XChild,
+                    Y = YChild,
+                });
+
+                Polygon triangle = new Polygon()
+                {
+                    Points = points,
+                    Stroke = Brushes.Black,
+                    StrokeThickness = 1,
+                    Fill = Brushes.Black,
+                };
+
+                graphCanvas.Children.Add(mainLine);
+                graphCanvas.Children.Add(triangle);
+            }
+            LineDrawing(index + 1);
+        }
     }
 }

@@ -39,35 +39,48 @@ namespace prb_session2.ModelHelpers
                 return width;
             } }
 
+        public int Offset {  get; set; } 
+
         public int GetXPosition(List<GraphElement> graphElements, Dictionary<int, int> levelWidths, int width)
         {
-            var parentElement = graphElements.FirstOrDefault(e => e.Children.Contains(this));
+             var parentElement = graphElements.FirstOrDefault(e =>  e.Children.Contains(this));
             if (parentElement != null)
             {
-                var siblings = parentElement.Children;
+                var childrens = parentElement.Children;
 
-                int index = siblings.IndexOf(this);
-
-                int parentWidth = parentElement.Width;
+                int index = childrens.IndexOf(this);
 
                 int levelWidth = levelWidths[Level];
 
-                int totalSiblingsWidth = siblings.Sum(child => child.Width) + (siblings.Count - 1) * ElementSpace;
+                int offset = 0;
 
-                int offset = (parentWidth - levelWidth) / 2 + Width + index * ElementSpace + index * WidthElement;
+                for(int i = 0; i < index; i++)
+                {
+                    offset += childrens[i].Width;
+                }
 
-                return parentElement.GetXPosition(graphElements, levelWidths, width) + offset;
+                Offset = offset;
+
+                int parentOffset = parentElement.Offset == 0 ? parentElement.Offset : parentElement.Offset + ElementSpace;
+
+                int finalOffset = 0;
+
+                if(offset == 0)
+                {
+                    finalOffset = parentOffset + childrens[index].Width / 2 - WidthElement / 2;
+                }
+                else
+                {
+                    finalOffset = offset + parentOffset +((levelWidth - offset) / 2 - WidthElement / 2);
+                }
+
+                return finalOffset;
             }
             else
             {
-                return width / 2 - Width / 2;
+                return width / 2 - WidthElement / 2;
             }
         }
-
-                //        // Возвращаем позицию родительского элемента плюс смещение
-                //return parentElement.GetXPosition(graphElements, levelWidths, width) - parentWidth / 2 + offset;
-
-                ////var offset = (totalSiblingsWidth - Width) / 2 + index * (Width + ElementSpace);
 
         public int GetYPosition()
         {
