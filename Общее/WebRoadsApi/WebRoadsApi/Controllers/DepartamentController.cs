@@ -7,7 +7,7 @@ namespace WebRoadsApi.Controllers
 {
     public class DepartamentController : Controller
     {
-        RoadsContext _db = new();
+        PrbContext _db = new();
         JsonSerializerSettings settings = new()
         {
             ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
