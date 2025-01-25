@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:prb_session2_first_try"
         mc:Ignorable="d"
         Title="Сессия 2" Height="800" Width="1200" ResizeMode="NoResize"
-        Icon="../Assetts/Logo.png">
+        Icon="../Assetts/Logo.png" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -59,7 +59,7 @@
                 <ColumnDefinition Width="25"/>
             </Grid.ColumnDefinitions>
 
-            <ItemsControl Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightGray">
+            <ItemsControl Name="listWorkers" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightGray" MouseDoubleClick="listWorkers_MouseDoubleClick">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Grid Width="500">

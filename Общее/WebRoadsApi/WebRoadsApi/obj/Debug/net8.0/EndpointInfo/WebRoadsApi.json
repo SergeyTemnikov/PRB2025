@@ -16,7 +16,638 @@
           }
         }
       }
+    },
+    "/Workers/GetWorkers": {
+      "get": {
+        "tags": [
+          "Workers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Workers/DeleteWorker/{id}": {
+      "delete": {
+        "tags": [
+          "Workers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Workers/ChangeWorker/{id}": {
+      "put": {
+        "tags": [
+          "Workers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Worker"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Worker"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Worker"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
-  "components": { }
+  "components": {
+    "schemas": {
+      "Cabinet": {
+        "type": "object",
+        "properties": {
+          "idCabinet": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cabinetNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "workers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Worker"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Calendar": {
+        "type": "object",
+        "properties": {
+          "idCalendar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idEvent": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idEventNavigation": {
+            "$ref": "#/components/schemas/Event"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Departament": {
+        "type": "object",
+        "properties": {
+          "idDepartament": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nameDepartament": {
+            "type": "string",
+            "nullable": true
+          },
+          "idParentDepartament": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "departamentDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "idHeadOfDepartament": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idHeadOfDepartamentNavigation": {
+            "$ref": "#/components/schemas/Worker"
+          },
+          "idParentDepartamentNavigation": {
+            "$ref": "#/components/schemas/Departament"
+          },
+          "inverseIdParentDepartamentNavigation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Departament"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Event": {
+        "type": "object",
+        "properties": {
+          "idEvent": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "eventName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idEventType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idEventStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "calendars": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Calendar"
+            },
+            "nullable": true
+          },
+          "idEventStatusNavigation": {
+            "$ref": "#/components/schemas/EventStatus"
+          },
+          "idEventTypeNavigation": {
+            "$ref": "#/components/schemas/EventType"
+          },
+          "trainingCalendars": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TrainingCalendar"
+            },
+            "nullable": true
+          },
+          "trainingMaterials": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TrainingMaterial"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EventStatus": {
+        "type": "object",
+        "properties": {
+          "idEventStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusName": {
+            "type": "string",
+            "nullable": true
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Event"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EventType": {
+        "type": "object",
+        "properties": {
+          "idEventType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "typeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Event"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HolidayCalendar": {
+        "type": "object",
+        "properties": {
+          "idHolidayCalendar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idWorker": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "idWorkerNavigation": {
+            "$ref": "#/components/schemas/Worker"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Material": {
+        "type": "object",
+        "properties": {
+          "idMaterial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "materialName": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataSucces": {
+            "type": "string",
+            "format": "date"
+          },
+          "dateChanged": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "idStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idAuthor": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idRegion": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idAuthorNavigation": {
+            "$ref": "#/components/schemas/Worker"
+          },
+          "idStatusNavigation": {
+            "$ref": "#/components/schemas/MaterialStatus"
+          },
+          "idTypeNavigation": {
+            "$ref": "#/components/schemas/MaterialType"
+          },
+          "trainingMaterials": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TrainingMaterial"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MaterialStatus": {
+        "type": "object",
+        "properties": {
+          "idMaterialStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusName": {
+            "type": "string",
+            "nullable": true
+          },
+          "materials": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Material"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MaterialType": {
+        "type": "object",
+        "properties": {
+          "idMaterialType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "typeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "materials": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Material"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MissCalendar": {
+        "type": "object",
+        "properties": {
+          "idMissCalendar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idWorker": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "missDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "idWorkerNavigation": {
+            "$ref": "#/components/schemas/Worker"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Position": {
+        "type": "object",
+        "properties": {
+          "idPosition": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "namePosition": {
+            "type": "string",
+            "nullable": true
+          },
+          "workers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Worker"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TrainingCalendar": {
+        "type": "object",
+        "properties": {
+          "idTrainingCalendar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idTraining": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idWorker": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idTrainingNavigation": {
+            "$ref": "#/components/schemas/Event"
+          },
+          "idWorkerNavigation": {
+            "$ref": "#/components/schemas/Worker"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TrainingMaterial": {
+        "type": "object",
+        "properties": {
+          "idTrainingMaterial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idTraining": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idMaterial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idMaterialNavigation": {
+            "$ref": "#/components/schemas/Material"
+          },
+          "idTrainingNavigation": {
+            "$ref": "#/components/schemas/Event"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Worker": {
+        "type": "object",
+        "properties": {
+          "idWorker": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idPosition": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "workPhoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCabinet": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "idLead": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idHelper": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idDepartament": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idPrivateInfo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isWorking": {
+            "type": "boolean"
+          },
+          "lastWorkDay": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "departaments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Departament"
+            },
+            "nullable": true
+          },
+          "holidayCalendars": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HolidayCalendar"
+            },
+            "nullable": true
+          },
+          "idCabinetNavigation": {
+            "$ref": "#/components/schemas/Cabinet"
+          },
+          "idHelperNavigation": {
+            "$ref": "#/components/schemas/Worker"
+          },
+          "idLeadNavigation": {
+            "$ref": "#/components/schemas/Worker"
+          },
+          "idPositionNavigation": {
+            "$ref": "#/components/schemas/Position"
+          },
+          "idPrivateInfoNavigation": {
+            "$ref": "#/components/schemas/WorkerPrivateInfo"
+          },
+          "inverseIdHelperNavigation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Worker"
+            },
+            "nullable": true
+          },
+          "inverseIdLeadNavigation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Worker"
+            },
+            "nullable": true
+          },
+          "materials": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Material"
+            },
+            "nullable": true
+          },
+          "missCalendars": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MissCalendar"
+            },
+            "nullable": true
+          },
+          "trainingCalendars": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TrainingCalendar"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WorkerPrivateInfo": {
+        "type": "object",
+        "properties": {
+          "idInfo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "privatePhoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "workers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Worker"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
 }

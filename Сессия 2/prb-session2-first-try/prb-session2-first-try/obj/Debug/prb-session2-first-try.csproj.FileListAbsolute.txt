@@ -1,0 +1,6 @@
+C:\Users\satem\Desktop\PRB\Сессия 2\prb-session2-first-try\prb-session2-first-try\obj\Debug\prb-session2-first-try.csproj.AssemblyReference.cache
+C:\Users\satem\Desktop\PRB\Сессия 2\prb-session2-first-try\prb-session2-first-try\obj\Debug\Windows\MainWindow.g.cs
+C:\Users\satem\Desktop\PRB\Сессия 2\prb-session2-first-try\prb-session2-first-try\obj\Debug\Windows\ModalWorkerDialog.g.cs
+C:\Users\satem\Desktop\PRB\Сессия 2\prb-session2-first-try\prb-session2-first-try\obj\Debug\App.g.cs
+C:\Users\satem\Desktop\PRB\Сессия 2\prb-session2-first-try\prb-session2-first-try\obj\Debug\prb-session2-first-try_MarkupCompile.cache
+C:\Users\satem\Desktop\PRB\Сессия 2\prb-session2-first-try\prb-session2-first-try\obj\Debug\prb-session2-first-try_MarkupCompile.lref

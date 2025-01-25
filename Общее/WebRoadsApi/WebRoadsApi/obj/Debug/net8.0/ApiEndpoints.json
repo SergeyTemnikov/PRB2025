@@ -8,5 +8,52 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebRoadsApi.Controllers.WorkersController",
+    "Method": "UpdateWorker",
+    "RelativePath": "Workers/ChangeWorker/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "worker",
+        "Type": "WebRoadsApi.Models.Worker",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebRoadsApi.Controllers.WorkersController",
+    "Method": "DeleteWorker",
+    "RelativePath": "Workers/DeleteWorker/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebRoadsApi.Controllers.WorkersController",
+    "Method": "GetWorkers",
+    "RelativePath": "Workers/GetWorkers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

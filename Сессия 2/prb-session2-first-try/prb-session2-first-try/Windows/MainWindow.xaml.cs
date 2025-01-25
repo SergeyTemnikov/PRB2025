@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using prb_session2_first_try.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -22,6 +24,7 @@ namespace prb_session2_first_try.Windows
     public partial class MainWindow : Window
     {
         private HttpClient _httpClient;
+        private List<Worker> _workers = new List<Worker>();
 
         public MainWindow()
         {
@@ -29,9 +32,31 @@ namespace prb_session2_first_try.Windows
             InitializeComponent();
         }
 
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            await GetData();
+
+            listWorkers.ItemsSource = _workers;
+        }
+
         private async Task GetData()
         {
-            string url = "";
+            string url = "https://localhost:7208/Workers/GetWorkers";
+            var response = await _httpClient.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                var content  = await response.Content.ReadAsStringAsync();
+                _workers = JsonConvert.DeserializeObject<List<Worker>>(content);
+            }
+            else
+            {
+                throw new Exception($"Ошибка при получении данных. Код ошибки: {response.StatusCode}. Текст ошибки: {response.Content}.");
+            }
+        }
+
+        private void listWorkers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }
