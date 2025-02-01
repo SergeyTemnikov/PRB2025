@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A1DBB94-AB4F-466D-ACFB-4866B6F20651}|prb-session2\\prb-session2.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A1DBB94-AB4F-466D-ACFB-4866B6F20651}|prb-session2\\prb-session2.csproj|solutionrelative:prb-session2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A1DBB94-AB4F-466D-ACFB-4866B6F20651}|prb-session2\\prb-session2.csproj|C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\modelhelpers\\graphelement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A1DBB94-AB4F-466D-ACFB-4866B6F20651}|prb-session2\\prb-session2.csproj|solutionrelative:prb-session2\\modelhelpers\\graphelement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A1DBB94-AB4F-466D-ACFB-4866B6F20651}|prb-session2\\prb-session2.csproj|C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3A1DBB94-AB4F-466D-ACFB-4866B6F20651}|prb-session2\\prb-session2.csproj|solutionrelative:prb-session2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A1DBB94-AB4F-466D-ACFB-4866B6F20651}|prb-session2\\prb-session2.csproj|C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\models\\departament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A1DBB94-AB4F-466D-ACFB-4866B6F20651}|prb-session2\\prb-session2.csproj|solutionrelative:prb-session2\\models\\departament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A1DBB94-AB4F-466D-ACFB-4866B6F20651}|prb-session2\\prb-session2.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A1DBB94-AB4F-466D-ACFB-4866B6F20651}|prb-session2\\prb-session2.csproj|solutionrelative:prb-session2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GraphElement.cs",
-              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\ModelHelpers\\GraphElement.cs",
-              "RelativeDocumentMoniker": "prb-session2\\ModelHelpers\\GraphElement.cs",
-              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\ModelHelpers\\GraphElement.cs",
-              "RelativeToolTip": "prb-session2\\ModelHelpers\\GraphElement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T05:09:23.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\MainWindow.xaml",
               "RelativeDocumentMoniker": "prb-session2\\MainWindow.xaml",
@@ -55,28 +34,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "prb-session2\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\MainWindow.xaml.cs",
               "RelativeToolTip": "prb-session2\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-18T06:10:37.086Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Departament.cs",
-              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\Models\\Departament.cs",
-              "RelativeDocumentMoniker": "prb-session2\\Models\\Departament.cs",
-              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2\\prb-session2\\Models\\Departament.cs",
-              "RelativeToolTip": "prb-session2\\Models\\Departament.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T08:12:46.165Z"
             }
           ]
         }

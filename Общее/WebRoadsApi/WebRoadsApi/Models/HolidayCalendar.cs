@@ -9,9 +9,9 @@ public partial class HolidayCalendar
 
     public int IdWorker { get; set; }
 
-    public DateOnly StartDate { get; set; }
+    public DateTime StartDate { get; set; }
 
-    public DateOnly EndDate { get; set; }
+    public DateTime EndDate { get; set; }
 
     public virtual Worker IdWorkerNavigation { get; set; } = null!;
 }

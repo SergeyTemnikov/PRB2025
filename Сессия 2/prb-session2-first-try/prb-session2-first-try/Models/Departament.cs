@@ -10,11 +10,11 @@ namespace prb_session2_first_try.Models
     {
         public int IdDepartament { get; set; }
 
-        public string NameDepartament { get; set; } = null!;
+        public string NameDepartament { get; set; } 
 
         public int? IdParentDepartament { get; set; }
 
-        public string? DepartamentDescription { get; set; }
+        public string DepartamentDescription { get; set; }
 
         public int? IdHeadOfDepartament { get; set; }
 

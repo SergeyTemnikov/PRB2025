@@ -7,9 +7,11 @@ public partial class WorkerPrivateInfo
 {
     public int IdInfo { get; set; }
 
+    public int IdWorker { get; set; }
+
     public string? PrivatePhoneNumber { get; set; }
 
-    public DateOnly? Birthday { get; set; }
+    public DateTime? Birthday { get; set; }
 
-    public virtual ICollection<Worker> Workers { get; set; } = new List<Worker>();
+    public virtual Worker IdWorkerNavigation { get; set; } = null!;
 }

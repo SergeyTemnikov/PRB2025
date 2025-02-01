@@ -5,5 +5,11 @@
              StartupUri="Windows\MainWindow.xaml">
     <Application.Resources>
         <SolidColorBrush x:Key="mainBackground" Color="#89FC43" Opacity="0.50"/>
+        <SolidColorBrush x:Key="lightGreenBackground" Color="#89FC43" Opacity=".50"/>
+        <Style x:Key="btnStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource lightGreenBackground}"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
     </Application.Resources>
 </Application>

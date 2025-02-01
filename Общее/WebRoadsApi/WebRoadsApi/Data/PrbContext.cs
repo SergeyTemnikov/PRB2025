@@ -50,7 +50,7 @@ public partial class PrbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-3SNADHI;Database=prb;TrustServerCertificate=True;Trusted_Connection=true;");
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-3SNADHI;database=prb;TrustServerCertificate=true;Trusted_Connection=true;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -140,6 +140,9 @@ public partial class PrbContext : DbContext
 
             entity.ToTable("HolidayCalendar");
 
+            entity.Property(e => e.EndDate).HasColumnType("datetime");
+            entity.Property(e => e.StartDate).HasColumnType("datetime");
+
             entity.HasOne(d => d.IdWorkerNavigation).WithMany(p => p.HolidayCalendars)
                 .HasForeignKey(d => d.IdWorker)
                 .OnDelete(DeleteBehavior.ClientSetNull)
@@ -152,6 +155,8 @@ public partial class PrbContext : DbContext
 
             entity.ToTable("Material");
 
+            entity.Property(e => e.DataSucces).HasColumnType("datetime");
+            entity.Property(e => e.DateChanged).HasColumnType("datetime");
             entity.Property(e => e.MaterialName).HasMaxLength(50);
 
             entity.HasOne(d => d.IdAuthorNavigation).WithMany(p => p.Materials)
@@ -193,6 +198,8 @@ public partial class PrbContext : DbContext
             entity.HasKey(e => e.IdMissCalendar);
 
             entity.ToTable("MissCalendar");
+
+            entity.Property(e => e.MissDate).HasColumnType("datetime");
 
             entity.HasOne(d => d.IdWorkerNavigation).WithMany(p => p.MissCalendars)
                 .HasForeignKey(d => d.IdWorker)
@@ -254,6 +261,7 @@ public partial class PrbContext : DbContext
 
             entity.Property(e => e.Email).HasMaxLength(50);
             entity.Property(e => e.FullName).HasMaxLength(50);
+            entity.Property(e => e.LastWorkDay).HasColumnType("datetime");
             entity.Property(e => e.WorkPhoneNumber).HasMaxLength(20);
 
             entity.HasOne(d => d.IdCabinetNavigation).WithMany(p => p.Workers)
@@ -272,10 +280,6 @@ public partial class PrbContext : DbContext
                 .HasForeignKey(d => d.IdPosition)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Worker_Position");
-
-            entity.HasOne(d => d.IdPrivateInfoNavigation).WithMany(p => p.Workers)
-                .HasForeignKey(d => d.IdPrivateInfo)
-                .HasConstraintName("FK_Worker_WorkerPrivateInfo");
         });
 
         modelBuilder.Entity<WorkerPrivateInfo>(entity =>
@@ -284,7 +288,13 @@ public partial class PrbContext : DbContext
 
             entity.ToTable("WorkerPrivateInfo");
 
+            entity.Property(e => e.Birthday).HasColumnType("datetime");
             entity.Property(e => e.PrivatePhoneNumber).HasMaxLength(20);
+
+            entity.HasOne(d => d.IdWorkerNavigation).WithMany(p => p.WorkerPrivateInfos)
+                .HasForeignKey(d => d.IdWorker)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_WorkerPrivateInfo_Worker");
         });
 
         OnModelCreatingPartial(modelBuilder);

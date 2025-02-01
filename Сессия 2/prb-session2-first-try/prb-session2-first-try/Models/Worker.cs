@@ -10,15 +10,15 @@ namespace prb_session2_first_try.Models
     {
         public int IdWorker { get; set; }
 
-        public string FullName { get; set; } = null!;
+        public string FullName { get; set; }
 
         public int IdPosition { get; set; }
 
-        public string WorkPhoneNumber { get; set; } = null!;
+        public string WorkPhoneNumber { get; set; }
 
         public int? IdCabinet { get; set; }
 
-        public string Email { get; set; } = null!;
+        public string Email { get; set; }
 
         public int? IdLead { get; set; }
 
@@ -30,6 +30,6 @@ namespace prb_session2_first_try.Models
 
         public bool IsWorking { get; set; }
 
-        public DateOnly? LastWorkDay { get; set; }
+        public DateTime? LastWorkDay { get; set; }
     }
 }

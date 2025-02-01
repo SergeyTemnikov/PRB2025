@@ -23,11 +23,9 @@ public partial class Worker
 
     public int IdDepartament { get; set; }
 
-    public int? IdPrivateInfo { get; set; }
-
     public bool IsWorking { get; set; }
 
-    public DateOnly? LastWorkDay { get; set; }
+    public DateTime? LastWorkDay { get; set; }
 
     public virtual ICollection<Departament> Departaments { get; set; } = new List<Departament>();
 
@@ -41,8 +39,6 @@ public partial class Worker
 
     public virtual Position IdPositionNavigation { get; set; } = null!;
 
-    public virtual WorkerPrivateInfo? IdPrivateInfoNavigation { get; set; }
-
     public virtual ICollection<Worker> InverseIdHelperNavigation { get; set; } = new List<Worker>();
 
     public virtual ICollection<Worker> InverseIdLeadNavigation { get; set; } = new List<Worker>();
@@ -52,4 +48,6 @@ public partial class Worker
     public virtual ICollection<MissCalendar> MissCalendars { get; set; } = new List<MissCalendar>();
 
     public virtual ICollection<TrainingCalendar> TrainingCalendars { get; set; } = new List<TrainingCalendar>();
+
+    public virtual ICollection<WorkerPrivateInfo> WorkerPrivateInfos { get; set; } = new List<WorkerPrivateInfo>();
 }

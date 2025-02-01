@@ -35,6 +35,69 @@ namespace WebRoadsApi.Controllers
             }
         }
 
+        [Route("/Workers/GetWorker/{id}")]
+        [HttpGet]
+        public IActionResult GetWorkerById(int id)
+        {
+            try
+            {
+                return Ok(JsonConvert.SerializeObject(_db.Workers.Where(x => x.IdWorker == id).FirstOrDefault(), settings));
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [Route("/Workers/GetWorkersPrivateInfo/{id}")]
+        [HttpGet]
+        public IActionResult GetWorkerPrivateInfoById(int id)
+        {
+            try
+            {
+                return Ok(JsonConvert.SerializeObject(_db.WorkerPrivateInfos.Where(x => x.IdWorker == id).FirstOrDefault(), settings));
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [Route("/Workers/GetWorkersFromDepartament/{id}")]
+        [HttpGet]
+        public IActionResult GetWorkersFromDepartament(int id)
+        {
+            try
+            {
+                return Ok(JsonConvert.SerializeObject(GetListWorkers(id), settings));
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        private List<Worker> GetListWorkers(int id, List<Worker> workers = null)
+        {
+            if (workers == null)
+            {
+                workers = new List<Worker>();
+            }
+
+            var workersFromDep = _db.Workers.Where(x => x.IdDepartament == id).ToList();
+            workers.AddRange(workersFromDep);
+
+            var departaments = _db.Departaments.Where(x => x.IdParentDepartament == id).ToList();
+
+            foreach (var department in departaments)
+            {
+                var subWorkers = GetListWorkers(department.IdDepartament); 
+                workers.AddRange(subWorkers);
+            }
+
+            return workers;
+        }
+
         [Route("/Workers/DeleteWorker/{id}")]
         [HttpDelete]
         public IActionResult DeleteWorker(int id)
@@ -45,8 +108,8 @@ namespace WebRoadsApi.Controllers
                 return NotFound("Такого работника не существует.");
             }
 
-            var missDays = _db.MissCalendars.Where(x => x.IdWorker == id && Convert.ToDateTime(x.MissDate) > DateTime.Today).ToList();
-            var holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id && Convert.ToDateTime(x.StartDate) > DateTime.Today).ToList();
+            var missDays = _db.MissCalendars.Where(x => x.IdWorker == id && x.MissDate > DateTime.Today).ToList();
+            var holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id && x.StartDate > DateTime.Today).ToList();
 
             if (missDays != null)
             {
@@ -64,7 +127,7 @@ namespace WebRoadsApi.Controllers
             }
 
             worker.IsWorking = false;
-            worker.LastWorkDay = DateOnly.FromDateTime(DateTime.Today);
+            worker.LastWorkDay = DateTime.Today;
 
             try
             {
@@ -110,9 +173,9 @@ namespace WebRoadsApi.Controllers
             }
         }
 
-        [Route("/Workers/GetWorkersCalendar/{id}")]
+        [Route("/Workers/GetWorkersCalendar/{id}/{state}")]
         [HttpGet]
-        public IActionResult GetWorker(int id, [FromBody] DateState state)
+        public IActionResult GetWorker(int id, string state)
         {
             var worker = _db.Workers.FirstOrDefault(x => x.IdWorker == id);
             if (worker == null)
@@ -126,20 +189,20 @@ namespace WebRoadsApi.Controllers
 
             switch(state)
             {
-                case DateState.Past:
+                case "past":
                     trainings = _db.TrainingCalendars.Where(x => x.IdWorker == id && x.EndDateTime.Date < DateTime.Today).ToList();
-                    misses = _db.MissCalendars.Where(x => x.IdWorker == id && Convert.ToDateTime(x.MissDate) < DateTime.Today).ToList();
-                    holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id && Convert.ToDateTime(x.EndDate) < DateTime.Today).ToList();
+                    misses = _db.MissCalendars.Where(x => x.IdWorker == id && x.MissDate < DateTime.Today).ToList();
+                    holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id && x.EndDate < DateTime.Today).ToList();
                     break;
-                case DateState.Present:
+                case "present":
                     trainings = _db.TrainingCalendars.Where(x => x.IdWorker == id && x.StartDateTime.Date < DateTime.Today && x.EndDateTime.Date > DateTime.Today).ToList();
-                    misses = _db.MissCalendars.Where(x => x.IdWorker == id && Convert.ToDateTime(x.MissDate) == DateTime.Today).ToList();
-                    holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id && Convert.ToDateTime(x.StartDate) < DateTime.Today && Convert.ToDateTime(x.EndDate) > DateTime.Today).ToList();
+                    misses = _db.MissCalendars.Where(x => x.IdWorker == id && x.MissDate == DateTime.Today).ToList();
+                    holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id && x.StartDate < DateTime.Today && x.EndDate > DateTime.Today).ToList();
                     break;
-                case DateState.Future:
+                case "future":
                     trainings = _db.TrainingCalendars.Where(x => x.IdWorker == id && x.StartDateTime.Date > DateTime.Today).ToList();
-                    misses = _db.MissCalendars.Where(x => x.IdWorker == id && Convert.ToDateTime(x.MissDate) > DateTime.Today).ToList();
-                    holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id && Convert.ToDateTime(x.StartDate) > DateTime.Today).ToList();
+                    misses = _db.MissCalendars.Where(x => x.IdWorker == id && x.MissDate > DateTime.Today).ToList();
+                    holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id && x.StartDate > DateTime.Today).ToList();
                     break;
             }
 

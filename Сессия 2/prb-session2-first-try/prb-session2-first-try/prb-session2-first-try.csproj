@@ -58,7 +58,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassHelpers\ApiHelper.cs" />
     <Compile Include="ClassHelpers\CalendarNode.cs" />
+    <Compile Include="ClassHelpers\GraphElement.cs" />
+    <Compile Include="Models\Cabinet.cs" />
+    <Compile Include="Models\Position.cs" />
+    <Compile Include="Models\WorkerPrivateInfo.cs" />
     <Compile Include="Windows\ModalWorkerDialog.xaml.cs">
       <DependentUpon>ModalWorkerDialog.xaml</DependentUpon>
     </Compile>

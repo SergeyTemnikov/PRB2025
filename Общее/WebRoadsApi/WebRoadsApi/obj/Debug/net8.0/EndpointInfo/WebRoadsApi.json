@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/Cabinet/GetCabinets": {
+      "get": {
+        "tags": [
+          "Cabinet"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Departament/GetDepartaments": {
       "get": {
         "tags": [
@@ -17,10 +29,91 @@
         }
       }
     },
+    "/Position/GetPositions": {
+      "get": {
+        "tags": [
+          "Position"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Workers/GetWorkers": {
       "get": {
         "tags": [
           "Workers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Workers/GetWorker/{id}": {
+      "get": {
+        "tags": [
+          "Workers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Workers/GetWorkersPrivateInfo/{id}": {
+      "get": {
+        "tags": [
+          "Workers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Workers/GetWorkersFromDepartament/{id}": {
+      "get": {
+        "tags": [
+          "Workers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -87,6 +180,37 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Workers/GetWorkersCalendar/{id}/{state}": {
+      "get": {
+        "tags": [
+          "Workers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "state",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -292,11 +416,11 @@
           },
           "startDate": {
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "endDate": {
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "idWorkerNavigation": {
             "$ref": "#/components/schemas/Worker"
@@ -317,11 +441,11 @@
           },
           "dataSucces": {
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "dateChanged": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "nullable": true
           },
           "idStatus": {
@@ -415,7 +539,7 @@
           },
           "missDate": {
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "idWorkerNavigation": {
             "$ref": "#/components/schemas/Worker"
@@ -542,17 +666,12 @@
             "type": "integer",
             "format": "int32"
           },
-          "idPrivateInfo": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
           "isWorking": {
             "type": "boolean"
           },
           "lastWorkDay": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "nullable": true
           },
           "departaments": {
@@ -580,9 +699,6 @@
           },
           "idPositionNavigation": {
             "$ref": "#/components/schemas/Position"
-          },
-          "idPrivateInfoNavigation": {
-            "$ref": "#/components/schemas/WorkerPrivateInfo"
           },
           "inverseIdHelperNavigation": {
             "type": "array",
@@ -618,6 +734,13 @@
               "$ref": "#/components/schemas/TrainingCalendar"
             },
             "nullable": true
+          },
+          "workerPrivateInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WorkerPrivateInfo"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -629,21 +752,21 @@
             "type": "integer",
             "format": "int32"
           },
+          "idWorker": {
+            "type": "integer",
+            "format": "int32"
+          },
           "privatePhoneNumber": {
             "type": "string",
             "nullable": true
           },
           "birthday": {
             "type": "string",
-            "format": "date",
+            "format": "date-time",
             "nullable": true
           },
-          "workers": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Worker"
-            },
-            "nullable": true
+          "idWorkerNavigation": {
+            "$ref": "#/components/schemas/Worker"
           }
         },
         "additionalProperties": false

@@ -42,7 +42,7 @@
             </Grid.ColumnDefinitions>
 
             <ScrollViewer Grid.Row="1" Grid.Column="1" Background="LightGray" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-                
+                <Canvas Name="graphCanvas" HorizontalAlignment="Center" VerticalAlignment="Top" />
             </ScrollViewer>
 
         </Grid>
@@ -59,12 +59,12 @@
                 <ColumnDefinition Width="25"/>
             </Grid.ColumnDefinitions>
 
-            <ItemsControl Name="listWorkers" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightGray" MouseDoubleClick="listWorkers_MouseDoubleClick">
+            <ItemsControl Name="listWorkers" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightGray">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Grid Width="500">
+                        <Grid Width="500" Tag="{Binding Worker.IdWorker}" MouseLeftButtonDown="Grid_MouseLeftButtonDown" Background="{StaticResource mainBackground}" Margin="15">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="300"/>
+                                <ColumnDefinition Width="500"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
@@ -73,22 +73,22 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
-                            <Grid Grid.Row="0" Grid.Column="0">
+                            <Grid Grid.Row="0" Grid.Column="0" VerticalAlignment="Stretch">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="195"/>
+                                    <ColumnDefinition Width="200"/>
                                     <ColumnDefinition Width="10"/>
-                                    <ColumnDefinition Width="195"/>
+                                    <ColumnDefinition Width="290"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Grid.Column="0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding Departament.NameDepartament}"/>
-                                <TextBlock Grid.Column="1" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" Text="-"/>
-                                <TextBlock Grid.Column="2" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding Position.NamePosition}"/>
+                                <TextBlock Grid.Column="0" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding Departament.NameDepartament}"/>
+                                <TextBlock Grid.Column="1" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Text="-"/>
+                                <TextBlock Grid.Column="2" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding Position.NamePosition}" TextWrapping="Wrap"/>
                             </Grid>
-                            <TextBlock Grid.Column="0" Grid.Row="1" FontSize="17" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding FullName}"/>
-                            <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal" Width="300">
-                                <TextBlock FontSize="17" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding PhoneNumber}"/>
-                                <TextBlock FontSize="17" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding Email}"/>
+                            <TextBlock Grid.Column="0" Grid.Row="1" FontSize="15" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" Text="{Binding Worker.FullName}"/>
+                            <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Width="450">
+                                <TextBlock FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" Text="{Binding Worker.WorkPhoneNumber}"/>
+                                <TextBlock FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" Text="{Binding Worker.Email}"/>
                             </StackPanel>
-                            <TextBlock Grid.Column="0" FontSize="17" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding Cabinet.NameCabinet}"/>
+                            <TextBlock Grid.Column="0" Grid.Row="3" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding Cabinet.CabinetNumber}"/>
                         </Grid>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>

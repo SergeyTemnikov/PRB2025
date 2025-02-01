@@ -9,7 +9,7 @@ public partial class MissCalendar
 
     public int IdWorker { get; set; }
 
-    public DateOnly MissDate { get; set; }
+    public DateTime MissDate { get; set; }
 
     public virtual Worker IdWorkerNavigation { get; set; } = null!;
 }

@@ -9,9 +9,9 @@ public partial class Material
 
     public string MaterialName { get; set; } = null!;
 
-    public DateOnly DataSucces { get; set; }
+    public DateTime DataSucces { get; set; }
 
-    public DateOnly? DateChanged { get; set; }
+    public DateTime? DateChanged { get; set; }
 
     public int IdStatus { get; set; }
 
