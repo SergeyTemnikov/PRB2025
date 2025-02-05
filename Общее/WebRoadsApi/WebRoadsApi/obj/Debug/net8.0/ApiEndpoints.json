@@ -131,6 +131,22 @@
   },
   {
     "ContainingType": "WebRoadsApi.Controllers.WorkersController",
+    "Method": "GetWorkersFromDepartamentAndChilds",
+    "RelativePath": "Workers/GetWorkersFromDepartamentAndChilds/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebRoadsApi.Controllers.WorkersController",
     "Method": "GetWorkerPrivateInfoById",
     "RelativePath": "Workers/GetWorkersPrivateInfo/{id}",
     "HttpMethod": "GET",

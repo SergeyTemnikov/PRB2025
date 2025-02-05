@@ -232,7 +232,7 @@ namespace prb_session2_first_try.Windows
 
         private async Task<List<WorkerInfo>> LoadWorkerInfo(int id)
         {
-            var workers = await ApiHelper.GetWorkers(id);
+            var workers = await ApiHelper.GetWorkersFromDepartamentAndChilds(id);
             var cabinets = await ApiHelper.GetCabinets();
             var positions = await ApiHelper.GetPositions();
 

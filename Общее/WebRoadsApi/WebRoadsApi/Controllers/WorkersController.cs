@@ -69,6 +69,21 @@ namespace WebRoadsApi.Controllers
         {
             try
             {
+                return Ok(JsonConvert.SerializeObject(_db.Workers.Where(x => x.IdDepartament == id).ToList(), settings));
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+
+        [Route("/Workers/GetWorkersFromDepartamentAndChilds/{id}")]
+        [HttpGet]
+        public IActionResult GetWorkersFromDepartamentAndChilds(int id)
+        {
+            try
+            {
                 return Ok(JsonConvert.SerializeObject(GetListWorkers(id), settings));
             }
             catch (Exception ex)
@@ -173,9 +188,9 @@ namespace WebRoadsApi.Controllers
             }
         }
 
-        [Route("/Workers/GetWorkersCalendar/{id}/{state}")]
+        [Route("/Workers/GetWorkersCalendar/{id}")]
         [HttpGet]
-        public IActionResult GetWorker(int id, string state)
+        public IActionResult GetWorker(int id)
         {
             var worker = _db.Workers.FirstOrDefault(x => x.IdWorker == id);
             if (worker == null)
@@ -183,28 +198,9 @@ namespace WebRoadsApi.Controllers
                 return NotFound("Пользователь не найден!");
             }
 
-            var trainings = new List<TrainingCalendar>();
-            var misses = new List<MissCalendar>();
-            var holidays = new List<HolidayCalendar>();
-
-            switch(state)
-            {
-                case "past":
-                    trainings = _db.TrainingCalendars.Where(x => x.IdWorker == id && x.EndDateTime.Date < DateTime.Today).ToList();
-                    misses = _db.MissCalendars.Where(x => x.IdWorker == id && x.MissDate < DateTime.Today).ToList();
-                    holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id && x.EndDate < DateTime.Today).ToList();
-                    break;
-                case "present":
-                    trainings = _db.TrainingCalendars.Where(x => x.IdWorker == id && x.StartDateTime.Date < DateTime.Today && x.EndDateTime.Date > DateTime.Today).ToList();
-                    misses = _db.MissCalendars.Where(x => x.IdWorker == id && x.MissDate == DateTime.Today).ToList();
-                    holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id && x.StartDate < DateTime.Today && x.EndDate > DateTime.Today).ToList();
-                    break;
-                case "future":
-                    trainings = _db.TrainingCalendars.Where(x => x.IdWorker == id && x.StartDateTime.Date > DateTime.Today).ToList();
-                    misses = _db.MissCalendars.Where(x => x.IdWorker == id && x.MissDate > DateTime.Today).ToList();
-                    holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id && x.StartDate > DateTime.Today).ToList();
-                    break;
-            }
+            var trainings = _db.TrainingCalendars.Where(x => x.IdWorker == id);
+            var misses = _db.MissCalendars.Where(x => x.IdWorker == id);
+            var holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id);
 
             ObservableCollection<CalendarNode> nodes = new ObservableCollection<CalendarNode>();
 

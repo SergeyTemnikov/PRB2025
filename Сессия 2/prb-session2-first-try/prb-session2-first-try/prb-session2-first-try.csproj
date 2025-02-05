@@ -62,6 +62,8 @@
     <Compile Include="ClassHelpers\CalendarNode.cs" />
     <Compile Include="ClassHelpers\GraphElement.cs" />
     <Compile Include="Models\Cabinet.cs" />
+    <Compile Include="Models\PartialWorker.cs" />
+    <Compile Include="Models\PartialWorkerPrivateInfo.cs" />
     <Compile Include="Models\Position.cs" />
     <Compile Include="Models\WorkerPrivateInfo.cs" />
     <Compile Include="Windows\ModalWorkerDialog.xaml.cs">

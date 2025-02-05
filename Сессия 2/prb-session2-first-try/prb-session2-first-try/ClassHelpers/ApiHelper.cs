@@ -34,9 +34,25 @@ namespace prb_session2_first_try.ClassHelpers
             }
         }
 
-        public static async Task<List<Worker>> GetWorkers(int idDepartament)
+        public static async Task<List<Worker>> GetWorkersFromDepartament(int idDepartament)
         {
             string urlWorkers = _url + $"/Workers/GetWorkersFromDepartament/{idDepartament}";
+            var response = await _httpClient.GetAsync(urlWorkers);
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Worker>>(content);
+            }
+            else
+            {
+                throw new Exception($"Ошибка при получении данных. Код ошибки: {response.StatusCode}. Текст ошибки: {response.Content}.");
+            }
+        }
+
+
+        public static async Task<List<Worker>> GetWorkersFromDepartamentAndChilds(int idDepartament)
+        {
+            string urlWorkers = _url + $"/Workers/GetWorkersFromDepartamentAndChilds/{idDepartament}";
             var response = await _httpClient.GetAsync(urlWorkers);
             if (response.IsSuccessStatusCode)
             {
@@ -79,9 +95,9 @@ namespace prb_session2_first_try.ClassHelpers
             }
         }
 
-        public static async Task<ObservableCollection<CalendarNode>> GetWorkerCalendar(int id, string state)
+        public static async Task<ObservableCollection<CalendarNode>> GetWorkerCalendar(int id)
         {
-            string url = _url + $"/Workers/GetWorkersCalendar/{id}/{state}";
+            string url = _url + $"/Workers/GetWorkersCalendar/{id}";
             var response = await _httpClient.GetAsync(url);
             if (response.IsSuccessStatusCode)
             {
@@ -91,6 +107,38 @@ namespace prb_session2_first_try.ClassHelpers
             else
             {
                 throw new Exception("Ошибка при получении событий данного рабочего.");
+            }
+        }
+
+        public static async Task<string> DeleteWorker(int id)
+        {
+            string url = _url + $"/Workers/DeleteWorker/{id}";
+            var response = await _httpClient.DeleteAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return content;
+            }
+            else
+            {
+                throw new Exception("Ошибка при увольнении данного рабочего.");
+            }
+        }
+
+        public static async Task<string> PutWorker(int id, Worker worker)
+        {
+            string url = _url + $"/Workers/ChangeWorker/{id}";
+            var jsonContent = JsonConvert.SerializeObject(worker);
+            var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync(url, httpContent);
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return content;
+            }
+            else
+            {
+                throw new Exception("Ошибка при изменении данного рабочего.");
             }
         }
 

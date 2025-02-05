@@ -17,6 +17,8 @@ using System.Windows.Shapes;
 using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace prb_session2_first_try.Windows
 {
@@ -36,16 +38,22 @@ namespace prb_session2_first_try.Windows
             _id = id;
         }
 
-
-
         private async void LoadData()
         {
-            txbFullName.Text = _worker.FullName;
-            txbEmail.Text = _worker.Email;
-            txbWorkPhoneNumber.Text = _worker.WorkPhoneNumber;
-            txbPrivatePhoneNumber.Text = _workerPrivateInfo.PrivatePhoneNumber;
-            dpBirthday.Text = _workerPrivateInfo.Birthday.ToString();
+            _worker = await ApiHelper.GetWorker(_id);
+            _workerPrivateInfo = await ApiHelper.GetWorkerPrivateInfo(_id);
+            _calendar = await ApiHelper.GetWorkerCalendar(_id);
+            treeCalendar.ItemsSource = _calendar;
 
+            txbFullName.DataContext = _worker;
+            txbEmail.DataContext = _worker;
+            txbPrivatePhoneNumber.DataContext = _workerPrivateInfo;
+            txbBirthday.DataContext = _workerPrivateInfo;
+            LoadApiData();
+        }
+
+        private async void LoadApiData()
+        {
             var positions = await ApiHelper.GetPositions();
             cmbPosition.ItemsSource = positions;
             cmbPosition.SelectedValue = positions.FirstOrDefault(x => x.IdPosition == _worker.IdPosition);
@@ -58,22 +66,17 @@ namespace prb_session2_first_try.Windows
             cmbDepartament.ItemsSource = departaments;
             cmbDepartament.SelectedValue = departaments.FirstOrDefault(x => x.IdDepartament == _worker.IdDepartament);
 
-            var workers = await ApiHelper.GetWorkers(1);
+            var workers = await ApiHelper.GetWorkersFromDepartament(_worker.IdDepartament);
+            workers.Insert(0, null);
             cmbLeader.ItemsSource = workers;
-            cmbLeader.SelectedValue = workers.FirstOrDefault(x => x.IdWorker == _worker.IdLead);
+            cmbLeader.SelectedValue = workers.Where(x => x != null).FirstOrDefault(x => x.IdWorker == _worker.IdLead);
 
             cmbHelper.ItemsSource = workers;
-            cmbHelper.SelectedValue = workers.FirstOrDefault(x => x.IdWorker == _worker.IdHelper);
-
-            treeCalendar.ItemsSource = _calendar;
+            cmbHelper.SelectedValue = workers.Where(x => x != null).FirstOrDefault(x => x.IdWorker == _worker.IdHelper);
         }
 
-        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            _worker = await ApiHelper.GetWorker(_id);
-            _workerPrivateInfo = await ApiHelper.GetWorkerPrivateInfo(_id);
-            _calendar = await ApiHelper.GetWorkerCalendar(_id, "present");
-
             LoadData();
         }
 
@@ -82,29 +85,6 @@ namespace prb_session2_first_try.Windows
             this.Close();
         }
 
-        private async void ButtonPresentCalendar_Click(object sender, RoutedEventArgs e)
-        {
-            _calendar = await ApiHelper.GetWorkerCalendar(_id, "present");
-
-            treeCalendar.ItemsSource = null;
-            treeCalendar.ItemsSource = _calendar;
-        }
-
-        private async void ButtonPastCalendar_Click(object sender, RoutedEventArgs e)
-        {
-            _calendar = await ApiHelper.GetWorkerCalendar(_id, "past");
-
-            treeCalendar.ItemsSource = null;
-            treeCalendar.ItemsSource = _calendar;
-        }
-
-        private async void ButtonFutureClick_Click(object sender, RoutedEventArgs e)
-        {
-            _calendar = await ApiHelper.GetWorkerCalendar(_id, "future");
-
-            treeCalendar.ItemsSource = null;
-            treeCalendar.ItemsSource = _calendar;
-        }
         private void SetElementsChangable(DependencyObject parent)
         {
             if (parent == null) return;
@@ -128,6 +108,124 @@ namespace prb_session2_first_try.Windows
 
             btnEdit.Visibility = Visibility.Visible;
             btnRetire.Visibility = Visibility.Visible;
+        }
+
+        private void gridInfo_Error(object sender, ValidationErrorEventArgs e)
+        {
+            Grid grid = sender as Grid;
+            
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var cmb = sender as ComboBox;
+            var tag = cmb.Tag as string;         
+            switch(tag)
+            {
+                case "Departament":
+                    _worker.IdDepartament = (cmb.SelectedValue as Departament).IdDepartament;
+                    break;
+                case "Position":
+                    _worker.IdPosition = (cmb.SelectedValue as Position).IdPosition;
+                    break;
+                case "Cabinet":
+                    _worker.IdCabinet = (cmb.SelectedValue as Cabinet).IdCabinet;
+                    break;
+                case "Leader":
+                case "Helper":
+                    if(cmb.SelectedValue == null)
+                    {
+                        break;
+                    }
+                    _worker.IdHelper = (cmb.SelectedValue as Worker).IdWorker;
+                    break;
+            }
+        }
+
+        private async void ButtonDeleteWorker_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                MessageBox.Show(await ApiHelper.DeleteWorker(_id));
+                DialogResult = true;
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("При увольнении произошла ошибка: " + ex.Message);
+            }
+        }
+
+        private bool GetErrors(DependencyObject obj)
+        {
+            foreach (object child in LogicalTreeHelper.GetChildren(obj))
+            {
+                UIElement element = child as UIElement;
+                if (element == null) continue;
+
+                if (Validation.GetHasError(element))
+                {
+                    return true;
+                }
+
+                GetErrors(element);
+            }
+            return false;
+        }
+
+        private async void ButtonEditWorker_Click(object sender, RoutedEventArgs e)
+        {
+            if(GetErrors(gridInfo))
+            {
+                MessageBox.Show("Не все данные введены корректно.");
+                return;
+            }
+            try
+            {
+                MessageBox.Show(await ApiHelper.PutWorker(_id, _worker));
+                DialogResult = true;
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("При изменении произошла ошибка: " + ex.Message);
+            }
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            CalendarGenerate(panelCheckBoxes);
+        }
+
+        private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            CalendarGenerate(panelCheckBoxes);
+        }
+
+        private void CalendarGenerate(DependencyObject parent)
+        {
+
+            foreach (object child in LogicalTreeHelper.GetChildren(parent))
+            {
+                var _sortedCalendar = new ObservableCollection<CalendarNode>();
+                CheckBox element = child as CheckBox;
+                if (element == null) continue;
+
+                if ((bool)element.IsChecked)
+                {
+                    switch (element.Tag)
+                    {
+                        case "Past":
+                            _sortedCalendar.Add(new CalendarNode()
+                            {
+                                Name = "Обучения",
+                                Days = _calendar.Where(x => x.Name == "Обучения").FirstOrDefault().Days
+                            });
+
+                            break;
+                    }
+                }
+            }
         }
     }
 }

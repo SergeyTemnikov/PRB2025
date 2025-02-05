@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace prb_session2_first_try.Models
 {
-    public class Worker
+    public partial class Worker
     {
         public int IdWorker { get; set; }
 

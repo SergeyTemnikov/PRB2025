@@ -122,6 +122,29 @@
         }
       }
     },
+    "/Workers/GetWorkersFromDepartamentAndChilds/{id}": {
+      "get": {
+        "tags": [
+          "Workers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Workers/DeleteWorker/{id}": {
       "delete": {
         "tags": [

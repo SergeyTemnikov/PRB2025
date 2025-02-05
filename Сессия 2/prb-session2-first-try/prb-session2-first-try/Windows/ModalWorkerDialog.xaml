@@ -21,7 +21,7 @@
             <RowDefinition Height="15"/>
         </Grid.RowDefinitions>
 
-        <Grid Name="gridInfo" Grid.Row="1" Grid.Column="1" Background="White">
+        <Grid Name="gridInfo" Grid.Row="1" Grid.Column="1" Background="White" Validation.Error="gridInfo_Error">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -42,50 +42,90 @@
             
             <!--ФИО-->
             <TextBlock Grid.Row="0" Grid.Column="0" Margin="5" Text="ФИО:" TextAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
-            <TextBox Name="txbFullName" Grid.Row="0" Grid.Column="1" Margin="5" IsHitTestVisible="False"></TextBox>
+            <TextBox Name="txbFullName" Grid.Row="0" Grid.Column="1" Margin="5" IsHitTestVisible="False">
+                <TextBox.Text>
+                    <Binding Path="FullName">
+                        <Binding.ValidationRules>
+                            <DataErrorValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
             <!--Должность-->
             <TextBlock Grid.Row="1" Grid.Column="0" Margin="5" Text="Должность:" TextAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
-            <ComboBox Name="cmbPosition" Grid.Row="1" Grid.Column="1" Margin="5" IsHitTestVisible="False" DisplayMemberPath="NamePosition"></ComboBox>
+            <ComboBox Name="cmbPosition" Grid.Row="1" Grid.Column="1" Margin="5" IsHitTestVisible="False" Tag="Position" DisplayMemberPath="NamePosition" SelectionChanged="ComboBox_SelectionChanged"></ComboBox>
 
             <!--Кабинет-->
             <TextBlock Grid.Row="2" Grid.Column="0" Margin="5" Text="Кабинет:" TextAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
-            <ComboBox Name="cmbCabinet" Grid.Row="2" Grid.Column="1" Margin="5" IsHitTestVisible="False" DisplayMemberPath="CabinetNumber"></ComboBox>
+            <ComboBox Name="cmbCabinet" Grid.Row="2" Grid.Column="1" Margin="5" IsHitTestVisible="False" Tag="Cabinet" DisplayMemberPath="CabinetNumber" SelectionChanged="ComboBox_SelectionChanged"></ComboBox>
 
             <!--Отдел-->
             <TextBlock Grid.Row="3" Grid.Column="0" Margin="5" Text="Отдел:" TextAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
-            <ComboBox Name="cmbDepartament" Grid.Row="3" Grid.Column="1" Margin="5" IsHitTestVisible="False" DisplayMemberPath="NameDepartament"></ComboBox>
+            <ComboBox Name="cmbDepartament" Grid.Row="3" Grid.Column="1" Margin="5" IsHitTestVisible="False" Tag="Departament" DisplayMemberPath="NameDepartament" SelectionChanged="ComboBox_SelectionChanged"></ComboBox>
 
             <!--Email-->
             <TextBlock Grid.Row="4" Grid.Column="0" Margin="5" Text="Email:" TextAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
-            <TextBox Name="txbEmail" Grid.Row="4" Grid.Column="1" Margin="5" IsHitTestVisible="False"></TextBox>
+            <TextBox Name="txbEmail" Grid.Row="4" Grid.Column="1" Margin="5" IsHitTestVisible="False">
+                <TextBox.Text>
+                    <Binding Path="Email">
+                        <Binding.ValidationRules>
+                            <DataErrorValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
             <!--Рабочий телефон-->
             <TextBlock Grid.Row="5" Grid.Column="0" Margin="5" Text="Рабочий номер:" TextAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
-            <TextBox Name="txbWorkPhoneNumber" Grid.Row="5" Grid.Column="1" Margin="5" IsHitTestVisible="False"></TextBox>
+            <TextBox Name="txbWorkPhoneNumber" Grid.Row="5" Grid.Column="1" Margin="5" IsHitTestVisible="False">
+                <TextBox.Text>
+                    <Binding Path="WorkPhoneNumber">
+                        <Binding.ValidationRules>
+                            <DataErrorValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
             <!--Личный телефон-->
             <TextBlock Grid.Row="6" Grid.Column="0" Margin="5" Text="Личный номер:" TextAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
-            <TextBox Name="txbPrivatePhoneNumber" Grid.Row="6" Grid.Column="1" Margin="5" IsHitTestVisible="False"></TextBox>
+            <TextBox Name="txbPrivatePhoneNumber" Grid.Row="6" Grid.Column="1" Margin="5" IsHitTestVisible="False">
+                <TextBox.Text>
+                    <Binding Path="PrivatePhoneNumber">
+                        <Binding.ValidationRules>
+                            <DataErrorValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
             <!--Дата рождения-->
             <TextBlock Grid.Row="7" Grid.Column="0" Margin="5" Text="Дата рождения:" TextAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
-            <DatePicker Name="dpBirthday" Grid.Row="7" Grid.Column="1" Margin="5" IsHitTestVisible="False"></DatePicker>
+            <TextBox Name="txbBirthday" Grid.Row="7" Grid.Column="1" Margin="5" IsHitTestVisible="False">
+                <TextBox.Text>
+                    <Binding Path="BirthdayString">
+                            <Binding.ValidationRules>
+                                <DataErrorValidationRule />
+                            </Binding.ValidationRules>
+                        </Binding>
+                </TextBox.Text>
+            </TextBox>
 
             <!--Наставник-->
             <TextBlock Grid.Row="8" Grid.Column="0" Margin="5" Text="Наставник:" TextAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
-            <ComboBox Name="cmbLeader" Grid.Row="8" Grid.Column="1" Margin="5" IsHitTestVisible="False" DisplayMemberPath="FullName"></ComboBox>
+            <ComboBox Name="cmbLeader" Grid.Row="8" Grid.Column="1" Margin="5" IsHitTestVisible="False" Tag="Leader" DisplayMemberPath="FullName" SelectionChanged="ComboBox_SelectionChanged"></ComboBox>
 
             <!--Помощник-->
             <TextBlock Grid.Row="9" Grid.Column="0" Margin="5" Text="Помощник:" TextAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
-            <ComboBox Name="cmbHelper" Grid.Row="9" Grid.Column="1" Margin="5" IsHitTestVisible="False" DisplayMemberPath="FullName"></ComboBox>
+            <ComboBox Name="cmbHelper" Grid.Row="9" Grid.Column="1" Margin="5" IsHitTestVisible="False" Tag="Helper" DisplayMemberPath="FullName" SelectionChanged="ComboBox_SelectionChanged"></ComboBox>
 
             <Button Name="btnEditMode" Grid.Row="10" Grid.Column="0" Margin="5" Width="25" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Content="E" Visibility="Visible" Click="ButtonEditMode_Click"></Button>
 
             <StackPanel Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" Margin="40 0 0 0" HorizontalAlignment="Right" Orientation="Horizontal">
                 <Button Name="btnAdd" VerticalAlignment="Center" Content="Добавить" Margin="5" Width="100" Height="25" Visibility="Collapsed"></Button>
-                <Button Name="btnEdit" VerticalAlignment="Center" Content="Изменить" Margin="5" Width="100" Height="25" Visibility="Collapsed"></Button>
-                <Button Name="btnRetire" VerticalAlignment="Center" Content="Уволить" Margin="5" Width="100" Height="25" Visibility="Collapsed"></Button>
+                <Button Name="btnEdit" VerticalAlignment="Center" Content="Изменить" Margin="5" Width="100" Height="25" Visibility="Collapsed" Click="ButtonEditWorker_Click"></Button>
+                <Button Name="btnRetire" VerticalAlignment="Center" Content="Уволить" Margin="5" Width="100" Height="25" Visibility="Collapsed" Click="ButtonDeleteWorker_Click"></Button>
                 <Button Name="btnCancel" VerticalAlignment="Center" Content="Отменить" Margin="5" Width="100" Height="25" Visibility="Visible" Click="ButtonCancel_Click"></Button>
             </StackPanel>
         </Grid>
@@ -96,10 +136,10 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Button Height="30" Width="100" Margin="5" Content="Прошедшие" Click="ButtonPastCalendar_Click"></Button>
-                <Button Height="30" Width="100" Margin="5" Content="Текущие" Click="ButtonPresentCalendar_Click"></Button>
-                <Button Height="30" Width="100" Margin="5" Content="Будущие" Click="ButtonFutureClick_Click"></Button>
+            <StackPanel Name="panelCheckBoxes" Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Прошедшие" Tag="Past" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Текущие" Tag="Present" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Будущие" Tag="Future" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
             </StackPanel>
 
             <TreeView Name="treeCalendar" Grid.Row="1">
