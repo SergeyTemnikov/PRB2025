@@ -204,30 +204,33 @@ namespace WebRoadsApi.Controllers
 
             ObservableCollection<CalendarNode> nodes = new ObservableCollection<CalendarNode>();
 
-            ObservableCollection<CalendarNode> trainigNodes = new ObservableCollection<CalendarNode>();
+            ObservableCollection<CalendarDays> trainigNodes = new ObservableCollection<CalendarDays>();
             foreach (var node in trainings)
             {
-                trainigNodes.Add(new CalendarNode()
+                trainigNodes.Add(new CalendarDays()
                 {
-                    Name = node.StartDateTime.ToString() + " - " + node.EndDateTime.ToString(),
+                    DateStart = node.StartDateTime,
+                    DateEnd = node.EndDateTime,
                 });
             }
 
-            ObservableCollection<CalendarNode> missNodes = new ObservableCollection<CalendarNode>();
+            ObservableCollection<CalendarDays> missNodes = new ObservableCollection<CalendarDays>();
             foreach (var node in misses)
             {
-                missNodes.Add(new CalendarNode()
+                missNodes.Add(new CalendarDays()
                 {
-                    Name = node.MissDate.ToString(),
+                    DateStart = node.MissDate,
+                    DateEnd= node.MissDate,
                 });
             }
 
-            ObservableCollection<CalendarNode> holidaysNodes = new ObservableCollection<CalendarNode>();
+            ObservableCollection<CalendarDays> holidaysNodes = new ObservableCollection<CalendarDays>(); 
             foreach (var node in holidays)
             {
-                holidaysNodes.Add(new CalendarNode()
+                holidaysNodes.Add(new CalendarDays()
                 {
-                    Name = node.StartDate.ToString() + " - " + node.EndDate.ToString(),
+                    DateStart = node.StartDate,
+                    DateEnd = node.EndDate,
                 });
             }
 
@@ -248,15 +251,7 @@ namespace WebRoadsApi.Controllers
             });
 
             return Ok(JsonConvert.SerializeObject(nodes, settings));
-
         }
 
-
-        public enum DateState
-        {
-            Past,
-            Present,
-            Future
-        }
     }
 }

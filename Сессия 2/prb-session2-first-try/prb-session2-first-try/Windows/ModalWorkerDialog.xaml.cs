@@ -204,25 +204,63 @@ namespace prb_session2_first_try.Windows
 
         private void CalendarGenerate(DependencyObject parent)
         {
+            var sortedCalendar = new ObservableCollection<CalendarNode>();
 
             foreach (object child in LogicalTreeHelper.GetChildren(parent))
             {
-                var _sortedCalendar = new ObservableCollection<CalendarNode>();
-                CheckBox element = child as CheckBox;
-                if (element == null) continue;
+                if (!(child is CheckBox checkBox) || (bool)(!checkBox.IsChecked)) continue;
 
-                if ((bool)element.IsChecked)
+                switch (checkBox.Tag?.ToString())
                 {
-                    switch (element.Tag)
-                    {
-                        case "Past":
-                            _sortedCalendar.Add(new CalendarNode()
-                            {
-                                Name = "Обучения",
-                                Days = _calendar.Where(x => x.Name == "Обучения").FirstOrDefault().Days
-                            });
+                    case "Past":
+                        AddFilteredNodes(sortedCalendar, date => date.DateEnd < DateTime.Today);
+                        break;
+                    case "Present":
+                        AddFilteredNodes(sortedCalendar, date => date.DateStart <= DateTime.Today && date.DateEnd >= DateTime.Today);
+                        break;
+                    case "Future":
+                        AddFilteredNodes(sortedCalendar, date => date.DateStart > DateTime.Today);
+                        break;
+                }
+            }
 
-                            break;
+            foreach(var node in sortedCalendar)
+            {
+                node.Days.OrderBy(x => x.DateStart);
+            }
+
+            treeCalendar.ItemsSource = null;
+            treeCalendar.ItemsSource = sortedCalendar;
+        }
+
+        private void AddFilteredNodes(ObservableCollection<CalendarNode> sortedCalendar, Func<CalendarDays, bool> filter)
+        {
+            foreach (var calendarNode in _calendar)
+            {
+                var filteredDays = calendarNode.Days.Where(filter).ToList();
+
+                if (filteredDays.Count > 0)
+                { 
+                    var existingNode = sortedCalendar.FirstOrDefault(node => node.Name == calendarNode.Name);
+
+                    if (existingNode != null)
+                    {
+                        foreach (var day in filteredDays)
+                        {
+                            if (!existingNode.Days.Contains(day))
+                            {
+                                existingNode.Days.Add(day);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        var newNode = new CalendarNode
+                        {
+                            Name = calendarNode.Name,
+                            Days = new ObservableCollection<CalendarDays>(filteredDays)
+                        };
+                        sortedCalendar.Add(newNode);
                     }
                 }
             }
