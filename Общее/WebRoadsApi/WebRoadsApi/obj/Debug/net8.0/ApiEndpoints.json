@@ -95,7 +95,7 @@
   {
     "ContainingType": "WebRoadsApi.Controllers.WorkersController",
     "Method": "GetWorker",
-    "RelativePath": "Workers/GetWorkersCalendar/{id}/{state}",
+    "RelativePath": "Workers/GetWorkersCalendar/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -103,11 +103,6 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "state",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],

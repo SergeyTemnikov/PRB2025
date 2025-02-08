@@ -137,17 +137,27 @@
             </Grid.RowDefinitions>
 
             <StackPanel Name="panelCheckBoxes" Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Прошедшие" Tag="Past" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
-                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Текущие" Tag="Present" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
-                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Будущие" Tag="Future" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Прошедшие" Tag="Past" IsChecked="False" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Текущие" Tag="Present" IsChecked="True" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Будущие" Tag="Future" IsChecked="True" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
             </StackPanel>
 
             <TreeView Name="treeCalendar" Grid.Row="1">
                 <TreeView.ItemTemplate>
                     <HierarchicalDataTemplate ItemsSource="{Binding Path=Days}">
                         <TextBlock Text="{Binding Name}" />
+                        <HierarchicalDataTemplate.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}" />
+                            </DataTemplate>
+                        </HierarchicalDataTemplate.ItemTemplate>
                     </HierarchicalDataTemplate>
                 </TreeView.ItemTemplate>
+                <TreeView.Resources>
+                    <Style TargetType="TreeViewItem">
+                        <Setter Property="IsExpanded" Value="True"/>
+                    </Style>
+                </TreeView.Resources>
             </TreeView>
 
         </Grid>

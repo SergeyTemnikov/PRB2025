@@ -198,9 +198,9 @@ namespace WebRoadsApi.Controllers
                 return NotFound("Пользователь не найден!");
             }
 
-            var trainings = _db.TrainingCalendars.Where(x => x.IdWorker == id);
-            var misses = _db.MissCalendars.Where(x => x.IdWorker == id);
-            var holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id);
+            var trainings = _db.TrainingCalendars.Where(x => x.IdWorker == id).ToList();
+            var misses = _db.MissCalendars.Where(x => x.IdWorker == id).ToList();
+            var holidays = _db.HolidayCalendars.Where(x => x.IdWorker == id).ToList();
 
             ObservableCollection<CalendarNode> nodes = new ObservableCollection<CalendarNode>();
 

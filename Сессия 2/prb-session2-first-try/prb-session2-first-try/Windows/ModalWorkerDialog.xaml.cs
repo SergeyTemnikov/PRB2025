@@ -231,6 +231,7 @@ namespace prb_session2_first_try.Windows
 
             treeCalendar.ItemsSource = null;
             treeCalendar.ItemsSource = sortedCalendar;
+            
         }
 
         private void AddFilteredNodes(ObservableCollection<CalendarNode> sortedCalendar, Func<CalendarDays, bool> filter)

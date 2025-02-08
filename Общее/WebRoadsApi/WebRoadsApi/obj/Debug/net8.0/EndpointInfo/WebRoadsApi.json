@@ -210,7 +210,7 @@
         }
       }
     },
-    "/Workers/GetWorkersCalendar/{id}/{state}": {
+    "/Workers/GetWorkersCalendar/{id}": {
       "get": {
         "tags": [
           "Workers"
@@ -223,14 +223,6 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "state",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -600,7 +592,8 @@
           },
           "idTraining": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "idWorker": {
             "type": "integer",

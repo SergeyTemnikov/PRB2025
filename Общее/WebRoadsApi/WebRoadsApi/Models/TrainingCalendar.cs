@@ -7,7 +7,7 @@ public partial class TrainingCalendar
 {
     public int IdTrainingCalendar { get; set; }
 
-    public int IdTraining { get; set; }
+    public int? IdTraining { get; set; }
 
     public int IdWorker { get; set; }
 
@@ -15,7 +15,7 @@ public partial class TrainingCalendar
 
     public DateTime EndDateTime { get; set; }
 
-    public virtual Event IdTrainingNavigation { get; set; } = null!;
+    public virtual Event IdTrainingNavigation { get; set; }
 
     public virtual Worker IdWorkerNavigation { get; set; } = null!;
 }
