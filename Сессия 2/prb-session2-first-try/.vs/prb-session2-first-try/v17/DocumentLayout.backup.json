@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\windows\\modalworkerdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\windows\\modalworkerdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|solutionrelative:prb-session2-first-try\\windows\\modalworkerdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\windows\\modalworkerdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|solutionrelative:prb-session2-first-try\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|solutionrelative:prb-session2-first-try\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\windows\\modalworkerdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|solutionrelative:prb-session2-first-try\\windows\\modalworkerdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|solutionrelative:prb-session2-first-try\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{083BCE80-3961-425B-8C88-32F9C43BB2AF}|prb-session2-first-try\\prb-session2-first-try.csproj|C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\classhelpers\\apihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,23 +46,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WorkerPrivateInfo.cs",
-              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Models\\WorkerPrivateInfo.cs",
-              "RelativeDocumentMoniker": "prb-session2-first-try\\Models\\WorkerPrivateInfo.cs",
-              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Models\\WorkerPrivateInfo.cs",
-              "RelativeToolTip": "prb-session2-first-try\\Models\\WorkerPrivateInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T06:23:48.734Z"
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\App.xaml",
+              "RelativeDocumentMoniker": "prb-session2-first-try\\App.xaml",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\App.xaml",
+              "RelativeToolTip": "prb-session2-first-try\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-10T05:29:13.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "ModalWorkerDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml",
+              "RelativeDocumentMoniker": "prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml",
+              "RelativeToolTip": "prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-10T05:16:48.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Windows\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "prb-session2-first-try\\Windows\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Windows\\MainWindow.xaml.cs",
+              "RelativeToolTip": "prb-session2-first-try\\Windows\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAwwOoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T05:04:31.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "PartialWorker.cs",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Models\\PartialWorker.cs",
               "RelativeDocumentMoniker": "prb-session2-first-try\\Models\\PartialWorker.cs",
@@ -62,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "PartialWorkerPrivateInfo.cs",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Models\\PartialWorkerPrivateInfo.cs",
               "RelativeDocumentMoniker": "prb-session2-first-try\\Models\\PartialWorkerPrivateInfo.cs",
@@ -74,32 +110,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ModalWorkerDialog.xaml",
-              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml",
-              "RelativeDocumentMoniker": "prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml",
-              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml",
-              "RelativeToolTip": "prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T09:42:50.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ModalWorkerDialog.xaml.cs",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml.cs",
               "RelativeDocumentMoniker": "prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml.cs",
               "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml.cs",
               "RelativeToolTip": "prb-session2-first-try\\Windows\\ModalWorkerDialog.xaml.cs",
-              "ViewState": "AgIAAMoAAAAAAAAAAAAcwOkAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwC8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T09:41:09.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T09:41:09.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "WorkerPrivateInfo.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Models\\WorkerPrivateInfo.cs",
+              "RelativeDocumentMoniker": "prb-session2-first-try\\Models\\WorkerPrivateInfo.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Models\\WorkerPrivateInfo.cs",
+              "RelativeToolTip": "prb-session2-first-try\\Models\\WorkerPrivateInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T06:23:48.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Windows\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "prb-session2-first-try\\Windows\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\Windows\\MainWindow.xaml",
+              "RelativeToolTip": "prb-session2-first-try\\Windows\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-10T05:00:15.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ApiHelper.cs",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 2\\prb-session2-first-try\\prb-session2-first-try\\ClassHelpers\\ApiHelper.cs",
               "RelativeDocumentMoniker": "prb-session2-first-try\\ClassHelpers\\ApiHelper.cs",
@@ -107,8 +153,7 @@
               "RelativeToolTip": "prb-session2-first-try\\ClassHelpers\\ApiHelper.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAawGQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T08:04:49.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T08:04:49.728Z"
             }
           ]
         }

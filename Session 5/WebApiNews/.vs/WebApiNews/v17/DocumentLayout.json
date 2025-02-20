@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\",
+  "WorkspaceRootPath": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|c:\\users\\satem\\desktop\\mobilesession\\webapinews\\webapinews\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|solutionrelative:webapinews\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|c:\\users\\satem\\desktop\\prb\\session 5\\webapinews\\webapinews\\models\\birthday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|solutionrelative:webapinews\\models\\birthday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|c:\\users\\satem\\desktop\\mobilesession\\webapinews\\webapinews\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|solutionrelative:webapinews\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|c:\\users\\satem\\desktop\\mobilesession\\webapinews\\webapinews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|c:\\users\\satem\\desktop\\prb\\session 5\\webapinews\\webapinews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|solutionrelative:webapinews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|c:\\users\\satem\\desktop\\mobilesession\\webapinews\\webapinews\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|c:\\users\\satem\\desktop\\prb\\session 5\\webapinews\\webapinews\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|solutionrelative:webapinews\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|c:\\users\\satem\\desktop\\prb\\session 5\\webapinews\\webapinews\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|solutionrelative:webapinews\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|c:\\users\\satem\\desktop\\prb\\session 5\\webapinews\\webapinews\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBA8C-EEBF-4CE2-900D-A8976769C569}|WebApiNews\\WebApiNews.csproj|solutionrelative:webapinews\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,54 +35,63 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NewsController.cs",
-              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\Controllers\\NewsController.cs",
-              "RelativeDocumentMoniker": "WebApiNews\\Controllers\\NewsController.cs",
-              "ToolTip": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\Controllers\\NewsController.cs",
-              "RelativeToolTip": "WebApiNews\\Controllers\\NewsController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowBMAAAAAAAAAAAAAAA==",
+              "Title": "Birthday.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\Models\\Birthday.cs",
+              "RelativeDocumentMoniker": "WebApiNews\\Models\\Birthday.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\Models\\Birthday.cs",
+              "RelativeToolTip": "WebApiNews\\Models\\Birthday.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T08:41:36.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\appsettings.json",
-              "RelativeDocumentMoniker": "WebApiNews\\appsettings.json",
-              "ToolTip": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\appsettings.json",
-              "RelativeToolTip": "WebApiNews\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-21T04:41:00.842Z",
+              "WhenOpened": "2025-02-12T09:03:53.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "WebApiNews\\Controllers\\NewsController.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "WebApiNews\\Controllers\\NewsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T08:41:36.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\Program.cs",
               "RelativeDocumentMoniker": "WebApiNews\\Program.cs",
-              "ToolTip": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\Program.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\Program.cs",
               "RelativeToolTip": "WebApiNews\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T08:28:16.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T08:28:16.08Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "News.cs",
-              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\Models\\News.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\Models\\News.cs",
               "RelativeDocumentMoniker": "WebApiNews\\Models\\News.cs",
-              "ToolTip": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\Models\\News.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\Models\\News.cs",
               "RelativeToolTip": "WebApiNews\\Models\\News.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T10:52:53.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T10:52:53.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "WebApiNews\\Models\\Event.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\Models\\Event.cs",
+              "RelativeToolTip": "WebApiNews\\Models\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T09:04:19.409Z"
             }
           ]
         }

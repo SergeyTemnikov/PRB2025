@@ -29,6 +29,98 @@
         }
       }
     },
+    "/api/News/AddNews": {
+      "post": {
+        "tags": [
+          "EventNews"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/News/GetNews": {
+      "get": {
+        "tags": [
+          "EventNews"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Events/GetEvents": {
+      "get": {
+        "tags": [
+          "EventNews"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Birthdays/GetBirthdays": {
+      "get": {
+        "tags": [
+          "EventNews"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/News/PostPositiveReactions": {
+      "put": {
+        "tags": [
+          "EventNews"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/News/PostNegativeReactions": {
+      "put": {
+        "tags": [
+          "EventNews"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Position/GetPositions": {
       "get": {
         "tags": [
@@ -68,6 +160,18 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Workers/GetWorkersPrivateInfo": {
+      "get": {
+        "tags": [
+          "Workers"
         ],
         "responses": {
           "200": {

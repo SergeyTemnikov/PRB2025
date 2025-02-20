@@ -43,7 +43,9 @@ namespace prb_session2_first_try.Windows
             _worker = await ApiHelper.GetWorker(_id);
             _workerPrivateInfo = await ApiHelper.GetWorkerPrivateInfo(_id);
             _calendar = await ApiHelper.GetWorkerCalendar(_id);
-            treeCalendar.ItemsSource = _calendar;
+
+            checkPresent.IsChecked = true;
+            checkFuture.IsChecked = true;
 
             txbFullName.DataContext = _worker;
             txbEmail.DataContext = _worker;
@@ -226,7 +228,7 @@ namespace prb_session2_first_try.Windows
 
             foreach(var node in sortedCalendar)
             {
-                node.Days.OrderBy(x => x.DateStart);
+                node.Days.OrderByDescending(x => x.DateStart);
             }
 
             treeCalendar.ItemsSource = null;

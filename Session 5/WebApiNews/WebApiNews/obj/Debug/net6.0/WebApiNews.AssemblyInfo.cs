@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApiNews")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecc3d6232fe0ee5a71cbf160fd63410a0315160e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+039533d5728e37fe66fff31e4fd12782a49866dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApiNews")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApiNews")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

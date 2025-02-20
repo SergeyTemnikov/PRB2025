@@ -1,0 +1,222 @@
+/* _content/prb-session5/Pages/Index.razor.rz.scp.css */
+/* _content/prb-session5/Shared/Calendar.razor.rz.scp.css */
+.calendar[b-rfb55s7drx] {
+    display: grid;
+    width: 300px;
+}
+
+.header[b-rfb55s7drx] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #78B24B;
+}
+
+.header-button[b-rfb55s7drx] {
+    background: none;
+    border: none;
+}
+
+.monthly-calendar[b-rfb55s7drx] {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, minmax(8vw, 1fr));
+    grid-auto-rows: 12vh;
+    overflow: auto;
+}
+
+.monthly-day[b-rfb55s7drx] {
+    width: auto;
+    height: 30px;
+    background-color: white;
+    padding: 1px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.day-content[b-rfb55s7drx] {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #6d7377;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.monthly-day--disabled[b-rfb55s7drx] {
+    color: rgba(152, 160, 166, 0.6);
+    background-color: #ffffff;
+}
+
+.weekend[b-rfb55s7drx] {
+    color: red;
+}
+
+.today[b-rfb55s7drx] {
+    border-color: red;
+}
+
+.calendar-table[b-rfb55s7drx] {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header-name[b-rfb55s7drx] {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+
+.event-high[b-rfb55s7drx] {
+    background-color: #FC4343;
+    color: black;
+}
+
+.event-medium[b-rfb55s7drx] {
+    background-color: #F8FC43;
+}
+
+.event-low[b-rfb55s7drx] {
+    background-color: #89FC43;
+}
+/* _content/prb-session5/Shared/MainLayout.razor.rz.scp.css */
+.page[b-qw6zo9oay6] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-qw6zo9oay6] {
+    flex: 1;
+}
+
+.sidebar[b-qw6zo9oay6] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-qw6zo9oay6] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-qw6zo9oay6]  a, .top-row .btn-link[b-qw6zo9oay6] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-qw6zo9oay6] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-qw6zo9oay6] {
+        display: none;
+    }
+
+    .top-row.auth[b-qw6zo9oay6] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-qw6zo9oay6], .top-row .btn-link[b-qw6zo9oay6] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-qw6zo9oay6] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-qw6zo9oay6] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-qw6zo9oay6] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+}
+/* _content/prb-session5/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-6yzrm9ve5n] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-6yzrm9ve5n] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-6yzrm9ve5n] {
+    font-size: 1.1rem;
+}
+
+.oi[b-6yzrm9ve5n] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-6yzrm9ve5n] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-6yzrm9ve5n] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-6yzrm9ve5n] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-6yzrm9ve5n]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-6yzrm9ve5n]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-6yzrm9ve5n]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-6yzrm9ve5n] {
+        display: none;
+    }
+
+    .collapse[b-6yzrm9ve5n] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-6yzrm9ve5n] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}

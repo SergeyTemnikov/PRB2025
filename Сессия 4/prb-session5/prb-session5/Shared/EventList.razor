@@ -1,0 +1,57 @@
+﻿
+
+@if(_events != null)
+{
+    <div class="container overflow-auto listColorText" style="height: @StringHeight;">
+        @foreach(var ev in _events)
+        {
+            <div class="col eventCard textBox align-items-center align-content-between">
+                <div class="row"> 
+                    <p class="title">@ev.Title</p>
+                </div>
+                <div class="row">
+                    <p class="subtitle">@ev.Body</p>
+                </div>
+                <div class="row d-flex justify-content-between" style="padding-right: 5%;">
+                    <div class="col">
+                        <p class="subtitle">@ev.Date</p>
+                    </div>
+                    <div class="col">
+                        <p class="subtitle" style="text-align: right;">@ev.Author</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+
+@code {
+    [Parameter]
+    public int? Height { get; set; }
+    private string StringHeight { 
+        get{
+            if(Height == null)
+            {
+                return "auto";
+            } else {
+                return $"{Height}px";
+            }
+        }
+    } 
+
+    protected override async Task OnInitializedAsync()
+    {
+        await FetchData();
+    }
+
+    private List<Event> _events;
+    private HttpClient httpClient;
+
+    private async Task FetchData()
+    {
+        httpClient = new HttpClient();
+
+        _events = await httpClient.GetFromJsonAsync<List<Event>>("https://localhost:7208/api/Events/GetEvents");
+    }
+}

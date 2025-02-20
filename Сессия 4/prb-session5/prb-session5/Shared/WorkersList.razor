@@ -1,0 +1,67 @@
+﻿
+
+
+
+@if(_workers != null)
+{
+    <div class="overflow-auto container d-flex flex-wrap justify-content-center" style="width: @StringWidth;">
+        @foreach (var worker in _workers)
+        {
+            <div class="textBox workerCard d-flex">
+                <div class="d-flex flex-column justify-content-between">
+                    <div>
+                        <p class="title">@worker.FullName</p>
+                        <p class="subtitle">@_positions.Where(x => x.IdPosition == worker.IdPosition).First().NamePosition</p>
+                    </div>
+                    <div>
+                        <p class="subtitle">@worker.Email</p>
+                        <p class="subtitle">@worker.WorkPhoneNumber</p>
+                        <p class="subtitle">@(Convert.ToDateTime(_workersPrivateInfo.Where(x => x.IdWorker == worker.IdWorker).First().Birthday).ToString("M"))</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+  
+
+
+
+@code {
+    [Parameter]
+    public int? Width { get; set; }
+    private string StringWidth
+    {
+        get
+        {
+            if (Width == null)
+            {
+                return "auto";
+            }
+            else
+            {
+                return $"{Width}px";
+            }
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await FetchData();
+    }
+
+    private List<Worker> _workers;
+    private List<WorkerPrivateInfo> _workersPrivateInfo;
+    private List<Position> _positions;
+    private HttpClient httpClient;
+
+    private async Task FetchData()
+    {
+        httpClient = new HttpClient();
+
+        _workers = await httpClient.GetFromJsonAsync<List<Worker>>("https://localhost:7208/Workers/GetWorkers");
+        _workersPrivateInfo = await httpClient.GetFromJsonAsync<List<WorkerPrivateInfo>>("https://localhost:7208/Workers/GetWorkersPrivateInfo");
+        _positions = await httpClient.GetFromJsonAsync<List<Position>>("https://localhost:7208/Position/GetPositions");
+    }
+}

@@ -5,9 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:prb_session2_first_try.Windows"
         mc:Ignorable="d"
-        Title="ModalWorkerDialog" Height="450" Width="800" ResizeMode="NoResize"
+        Title="ModalWorkerDialog" Height="Auto" Width="Auto" ResizeMode="NoResize"
         WindowStyle="None" Loaded="Window_Loaded">
-    <Grid Background="LightGray">
+    <Window.Resources>
+        <SolidColorBrush x:Key="lightGrayBackground" Color="LightGray" Opacity="0.1"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="3" Fill="{StaticResource lightGrayBackground}" Opacity="0.2">
+        </Rectangle>
+    <Grid Background="LightGray" Height="450" Width="800" Grid.Column="1" Grid.Row="1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="15"/>
             <ColumnDefinition/>
@@ -137,9 +153,9 @@
             </Grid.RowDefinitions>
 
             <StackPanel Name="panelCheckBoxes" Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Прошедшие" Tag="Past" IsChecked="False" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
-                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Текущие" Tag="Present" IsChecked="True" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
-                <CheckBox Height="30" Width="100" Margin="5" FontSize="14" Content="Будущие" Tag="Future" IsChecked="True" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox Name="checkPast" Height="30" Width="100" Margin="5" FontSize="14" Content="Прошедшие" Tag="Past" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox Name="checkPresent" Height="30" Width="100" Margin="5" FontSize="14" Content="Текущие" Tag="Present" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox Name="checkFuture" Height="30" Width="100" Margin="5" FontSize="14" Content="Будущие" Tag="Future" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
             </StackPanel>
 
             <TreeView Name="treeCalendar" Grid.Row="1">
@@ -161,5 +177,6 @@
             </TreeView>
 
         </Grid>
+    </Grid>
     </Grid>
 </Window>

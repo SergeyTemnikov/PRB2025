@@ -1,5 +1,77 @@
 [
   {
+    "ContainingType": "WebRoadsApi.Controllers.EventNewsController",
+    "Method": "GetBirthdays",
+    "RelativePath": "api/Birthdays/GetBirthdays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebRoadsApi.Controllers.EventNewsController",
+    "Method": "GetEvents",
+    "RelativePath": "api/Events/GetEvents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebRoadsApi.Controllers.EventNewsController",
+    "Method": "PostNews",
+    "RelativePath": "api/News/AddNews",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebRoadsApi.Controllers.EventNewsController",
+    "Method": "GetNews",
+    "RelativePath": "api/News/GetNews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebRoadsApi.Controllers.EventNewsController",
+    "Method": "PostNegativeReactions",
+    "RelativePath": "api/News/PostNegativeReactions",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebRoadsApi.Controllers.EventNewsController",
+    "Method": "PostPositiveReactions",
+    "RelativePath": "api/News/PostPositiveReactions",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebRoadsApi.Controllers.CabinetController",
     "Method": "GetCabinets",
     "RelativePath": "Cabinet/GetCabinets",
@@ -138,6 +210,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebRoadsApi.Controllers.WorkersController",
+    "Method": "GetWorkersPrivateInfo",
+    "RelativePath": "Workers/GetWorkersPrivateInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

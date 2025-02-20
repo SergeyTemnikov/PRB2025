@@ -69,3 +69,42 @@ C:\Users\satem\Desktop\MobileSession\WebApiNews\WebApiNews\bin\Debug\net6.0\WebA
 C:\Users\satem\Desktop\MobileSession\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets.build.endpoints.json
 C:\Users\satem\Desktop\MobileSession\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets\msbuild.WebApiNews.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Users\satem\Desktop\MobileSession\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\appsettings.json
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\WebApiNews.staticwebassets.endpoints.json
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\libman.json
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\WebApiNews.exe
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\WebApiNews.deps.json
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\WebApiNews.runtimeconfig.json
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\WebApiNews.dll
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\WebApiNews.pdb
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.csproj.AssemblyReference.cache
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.AssemblyInfoInputs.cache
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.AssemblyInfo.cs
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.csproj.CoreCompileInputs.cache
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.sourcelink.json
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\scopedcss\bundle\WebApiNews.styles.css
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets\msbuild.WebApiNews.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets\msbuild.WebApiNews.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets\msbuild.build.WebApiNews.props
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WebApiNews.props
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WebApiNews.props
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.csproj.Up2Date
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.dll
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\refint\WebApiNews.dll
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.pdb
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\WebApiNews.genruntimeconfig.cache
+C:\Users\satem\Desktop\PRB\Session 5\WebApiNews\WebApiNews\obj\Debug\net6.0\ref\WebApiNews.dll

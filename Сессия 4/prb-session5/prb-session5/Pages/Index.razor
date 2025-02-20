@@ -1,0 +1,35 @@
+﻿@page "/"
+
+<PageTitle>Главная страница</PageTitle>
+
+<nav class="navbar greenColor">
+    <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="#">
+            <img src="/Logo.png" width="80" height="80">
+        </a>
+        <form class="d-flex w-50" role="search">
+            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+        </form>
+    </div>
+</nav>
+
+<div class="container content d-flex flex-column">
+    <div class="col">
+        <p class="col d-flex justify-content-center">
+            <WorkersList></WorkersList>
+        </p>
+    </div>
+    <div class="col d-flex">
+        <div style="width: 500px;">
+            <div class="container-fluid d-flex justify-content-center">
+                <Calendar></Calendar>
+            </div>
+            <div class="container-fluid">
+                <EventList Height="450"></EventList>
+            </div>
+        </div>
+        <div class="w-75">
+            <p class="container-fluid greenColor" style="height: 700px;"></p>
+        </div>
+    </div>
+</div>

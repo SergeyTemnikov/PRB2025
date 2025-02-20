@@ -226,7 +226,13 @@ namespace prb_session2_first_try.Windows
         private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Grid grid = (Grid)sender;
-            ModalWorkerDialog dialog = new ModalWorkerDialog((int)grid.Tag);
+            ModalWorkerDialog dialog = new ModalWorkerDialog((int)grid.Tag)
+            {
+                Owner = this,
+                WindowStartupLocation = WindowStartupLocation.CenterOwner,
+                MaxHeight = this.Height,
+                MaxWidth = this.Width,
+            };
             dialog.ShowDialog();
         }
 

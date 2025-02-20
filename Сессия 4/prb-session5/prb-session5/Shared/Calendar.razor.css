@@ -1,0 +1,85 @@
+﻿.calendar {
+    display: grid;
+    width: 300px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #78B24B;
+}
+
+.header-button {
+    background: none;
+    border: none;
+}
+
+.monthly-calendar {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, minmax(8vw, 1fr));
+    grid-auto-rows: 12vh;
+    overflow: auto;
+}
+
+.monthly-day {
+    width: auto;
+    height: 30px;
+    background-color: white;
+    padding: 1px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.day-content {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #6d7377;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.monthly-day--disabled {
+    color: rgba(152, 160, 166, 0.6);
+    background-color: #ffffff;
+}
+
+.weekend {
+    color: red;
+}
+
+.today {
+    border-color: red;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header-name {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+
+.event-high {
+    background-color: #FC4343;
+    color: black;
+}
+
+.event-medium {
+    background-color: #F8FC43;
+}
+
+.event-low {
+    background-color: #89FC43;
+}

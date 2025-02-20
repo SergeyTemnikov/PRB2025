@@ -1,0 +1,78 @@
+﻿<div class="calendar">
+    <div class="header">
+        <button class="header-button" @onclick="PreviousMonth">@before</button>
+        <span>@CurrentDateString</span>
+        <button class="header-button" @onclick="NextMonth">@next</button>
+    </div>
+    @if (_events != null && _birthdays != null)
+    {
+        <table class="calendar-table">
+            <thead>
+                <tr>
+                    @for (var i = 0; i < 7; i++)
+                    {
+                        var d = GetNumOfDay(i);
+                        <th class="header-name noselect">@dayNames[d]</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int dayOfWeek = (int)FirstDate.DayOfWeek - 1; // Определяем первый день недели
+                    int firstDayWeek = dayOfWeek >= 0 ? dayOfWeek : 6;
+                    DayCounter = FirstDate; // Обновляем DayCounter на текущий месяц
+                    int totalDaysInMonth = DateTime.DaysInMonth(CurrentDate.Year, CurrentDate.Month);
+                    int emptyCellsBefore = firstDayWeek; // Количество пустых ячеек перед первым днем
+                    int totalCells = emptyCellsBefore + totalDaysInMonth; // Общее количество ячеек
+
+                    for (var week = 0; week < 6; week++) // Максимум 6 недель в месяце
+                    {
+                        <tr>
+                            @for (var dayIndex = 0; dayIndex < 7; dayIndex++)
+                            {
+                                if ((week * 7 + dayIndex) < emptyCellsBefore)
+                                {
+                                    // Пустые ячейки до первого дня месяца
+                                    <td class="monthly-day monthly-day--disabled"></td>
+                                }
+                                else if (DayCounter.Month == CurrentDate.Month && DayCounter <= LastDay)
+                                {
+                                    // Заполнение дней месяца с учетом выходных и праздников
+                                    string cssClass = "day-content";
+                                    if (IsWeekend(DayCounter))
+                                    {
+                                        cssClass += " weekend"; // Добавляем класс для выходных
+                                    }
+                                    cssClass += IsEvent(DayCounter);
+                                    if (IsToday(DayCounter))
+                                    {
+                                        cssClass += " today";
+                                    }
+                                    <td>
+                                        <div class="fade-in monthly-day noselect">
+                                            @if (IsBirthday(DayCounter))
+                                            {
+                                                <span class="@cssClass">🎂</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="@cssClass">@DayCounter.Day</span>
+                                            }
+                                        </div>
+                                    </td>
+                                    DayCounter = DayCounter.AddDays(1);
+                                }
+                                else
+                                {
+                                    // Пустые ячейки после последнего дня месяца
+                                    <td class="monthly-day monthly-day--disabled"></td>
+                                }
+                            }
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+</div>
+

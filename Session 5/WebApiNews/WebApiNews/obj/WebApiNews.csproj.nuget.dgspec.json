@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\WebApiNews.csproj": {}
+    "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\WebApiNews.csproj": {}
   },
   "projects": {
-    "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\WebApiNews.csproj": {
+    "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\WebApiNews.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\WebApiNews.csproj",
+        "projectUniqueName": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\WebApiNews.csproj",
         "projectName": "WebApiNews",
-        "projectPath": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\WebApiNews.csproj",
+        "projectPath": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\WebApiNews.csproj",
         "packagesPath": "C:\\Users\\satem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\satem\\Desktop\\MobileSession\\WebApiNews\\WebApiNews\\obj\\",
+        "outputPath": "C:\\Users\\satem\\Desktop\\PRB\\Session 5\\WebApiNews\\WebApiNews\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,16 +51,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.5.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.1, )"
-            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -89,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

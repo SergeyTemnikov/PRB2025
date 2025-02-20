@@ -49,6 +49,20 @@ namespace WebRoadsApi.Controllers
             }
         }
 
+        [Route("/Workers/GetWorkersPrivateInfo")]
+        [HttpGet]
+        public IActionResult GetWorkersPrivateInfo()
+        {
+            try
+            {
+                return Ok(JsonConvert.SerializeObject(_db.WorkerPrivateInfos.ToList(), settings));
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
         [Route("/Workers/GetWorkersPrivateInfo/{id}")]
         [HttpGet]
         public IActionResult GetWorkerPrivateInfoById(int id)
