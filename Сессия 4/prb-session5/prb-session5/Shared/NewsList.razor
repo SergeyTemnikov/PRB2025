@@ -1,0 +1,48 @@
+﻿@if (_news != null)
+{
+    <div class="container overflow-auto listColorText d-flex flex-wrap">
+        @foreach (var news in _news)
+        {
+            <div class="newsCard d-flex flex-column">
+                <div class="h-50">
+                    <img src="@news.Picture" class="w-100 h-100" style="background-size:cover;"/>
+                </div>
+                <div class="textBox h-50">
+                    <div class="d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="row">
+                                <p class="title">@news.Title</p>
+                            </div>
+                            <div class="row">
+                                <p class="subtitle">@news.Body</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="subtitle">@news.Date</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await FetchData();
+    }
+
+    private List<News> _news;
+    private HttpClient httpClient;
+
+    private async Task FetchData()
+    {
+        httpClient = new HttpClient();
+
+        _news = await httpClient.GetFromJsonAsync<List<News>>("https://localhost:7208/api/News/GetNews");
+    }
+}

@@ -90,8 +90,13 @@ a, .btn-link {
     width: 250px;
     height: 175px;
     margin: 10px;
-    display: flex;
-    
+}
+
+.newsCard {
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    padding-left: 5%;
 }
 
 .title {

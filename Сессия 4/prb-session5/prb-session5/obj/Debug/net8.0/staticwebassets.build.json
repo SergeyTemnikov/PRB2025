@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UwydkvmSQYarVSumFa9EXZq06OqOH3QhBn3JBy8PyRs=",
+  "Hash": "iE5LKhu4q7iGfOj1gDEf1UwKy5XyejnZJ+utqKvb9cw=",
   "Source": "prb-session5",
   "BasePath": "_content/prb-session5",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "prb-session5\\wwwroot",
       "Source": "prb-session5",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prb-session5.styles.css",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prb-session5.styles.css",
       "SourceId": "prb-session5",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "prb-session5#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "yyCsiddv45fEBbwTr2PwiDqBN71+cHYJkot1V4Vcazc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prb-session5.styles.css"
+      "OriginalItemSpec": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prb-session5.styles.css"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prb-session5.bundle.scp.css",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prb-session5.bundle.scp.css",
       "SourceId": "prb-session5",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "prb-session5#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "yyCsiddv45fEBbwTr2PwiDqBN71+cHYJkot1V4Vcazc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prb-session5.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prb-session5.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.eot",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.otf",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.ttf",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/open-iconic/FONT-LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/open-iconic/ICON-LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/open-iconic/README#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -304,17 +304,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "uwahmy6346",
-      "Integrity": "fg/rGcEnXB1oGVM6YoCgVjXOIG/LYJIb2U9NqyrcRCQ=",
+      "Fingerprint": "ng1ybasivt",
+      "Integrity": "GTEaGYGCW7WrkD2SqnDDKRmnKGyuv3t1hdnQTCMnrjQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\favicon.png",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\Logo.png",
+      "Identity": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\Logo.png",
       "SourceId": "prb-session5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\",
       "BasePath": "_content/prb-session5",
       "RelativePath": "Logo#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -356,7 +356,7 @@
   "Endpoints": [
     {
       "Route": "css/bootstrap/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -401,7 +401,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -438,7 +438,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -483,7 +483,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -520,7 +520,7 @@
     },
     {
       "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.cmapd0fi15.css",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -565,7 +565,7 @@
     },
     {
       "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -602,7 +602,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.0uw8dim9nl.eot",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -647,7 +647,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.eot",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -684,7 +684,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.h4d0pazwgy.woff",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -729,7 +729,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.ll5grcv8wv.ttf",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -774,7 +774,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.otf",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -811,7 +811,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.sjnzgf7e1h.svg",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -856,7 +856,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.svg",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -893,7 +893,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.ttf",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -930,7 +930,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.wk8x8xm0ah.otf",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -975,7 +975,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.woff",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1012,7 +1012,7 @@
     },
     {
       "Route": "css/open-iconic/FONT-LICENSE",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1049,7 +1049,7 @@
     },
     {
       "Route": "css/open-iconic/FONT-LICENSE.48tmkg660f",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1094,7 +1094,7 @@
     },
     {
       "Route": "css/open-iconic/ICON-LICENSE",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1131,7 +1131,7 @@
     },
     {
       "Route": "css/open-iconic/ICON-LICENSE.4dwjve0o0b",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1176,7 +1176,7 @@
     },
     {
       "Route": "css/open-iconic/README.5bzwdl5l6x.md",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\README.md",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\README.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1221,7 +1221,7 @@
     },
     {
       "Route": "css/open-iconic/README.md",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\README.md",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\open-iconic\\README.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1258,7 +1258,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1267,7 +1267,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3581"
+          "Value": "3655"
         },
         {
           "Name": "Content-Type",
@@ -1275,11 +1275,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fg/rGcEnXB1oGVM6YoCgVjXOIG/LYJIb2U9NqyrcRCQ=\""
+          "Value": "\"GTEaGYGCW7WrkD2SqnDDKRmnKGyuv3t1hdnQTCMnrjQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 09:18:33 GMT"
+          "Value": "Fri, 21 Feb 2025 07:49:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1289,13 +1289,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fg/rGcEnXB1oGVM6YoCgVjXOIG/LYJIb2U9NqyrcRCQ="
+          "Value": "sha256-GTEaGYGCW7WrkD2SqnDDKRmnKGyuv3t1hdnQTCMnrjQ="
         }
       ]
     },
     {
-      "Route": "css/site.uwahmy6346.css",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
+      "Route": "css/site.ng1ybasivt.css",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1304,7 +1304,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3581"
+          "Value": "3655"
         },
         {
           "Name": "Content-Type",
@@ -1312,11 +1312,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fg/rGcEnXB1oGVM6YoCgVjXOIG/LYJIb2U9NqyrcRCQ=\""
+          "Value": "\"GTEaGYGCW7WrkD2SqnDDKRmnKGyuv3t1hdnQTCMnrjQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 09:18:33 GMT"
+          "Value": "Fri, 21 Feb 2025 07:49:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1326,7 +1326,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uwahmy6346"
+          "Value": "ng1ybasivt"
         },
         {
           "Name": "label",
@@ -1334,13 +1334,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fg/rGcEnXB1oGVM6YoCgVjXOIG/LYJIb2U9NqyrcRCQ="
+          "Value": "sha256-GTEaGYGCW7WrkD2SqnDDKRmnKGyuv3t1hdnQTCMnrjQ="
         }
       ]
     },
     {
       "Route": "favicon.ifv42okdf2.png",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\favicon.png",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1385,7 +1385,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\favicon.png",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1422,7 +1422,7 @@
     },
     {
       "Route": "Logo.png",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\Logo.png",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\Logo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1459,7 +1459,7 @@
     },
     {
       "Route": "Logo.x9xcsz7ofr.png",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\Logo.png",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\Logo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1504,7 +1504,7 @@
     },
     {
       "Route": "prb-session5.bundle.scp.css",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prb-session5.bundle.scp.css",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prb-session5.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1541,7 +1541,7 @@
     },
     {
       "Route": "prb-session5.styles.css",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prb-session5.styles.css",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prb-session5.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1578,7 +1578,7 @@
     },
     {
       "Route": "prb-session5.x9pl8h0aov.bundle.scp.css",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prb-session5.bundle.scp.css",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prb-session5.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1623,7 +1623,7 @@
     },
     {
       "Route": "prb-session5.x9pl8h0aov.styles.css",
-      "AssetFile": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prb-session5.styles.css",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prb-session5.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {

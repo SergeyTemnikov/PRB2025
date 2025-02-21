@@ -9,11 +9,11 @@
         {
             <div class="textBox workerCard d-flex">
                 <div class="d-flex flex-column justify-content-between">
-                    <div>
-                        <p class="title">@worker.FullName</p>
-                        <p class="subtitle">@_positions.Where(x => x.IdPosition == worker.IdPosition).First().NamePosition</p>
+                    <div class="d-flex align-items-center flex-grow-1">
+                        <p class="title m-0">@worker.FullName</p>
                     </div>
                     <div>
+                        <p class="subtitle">@_positions.Where(x => x.IdPosition == worker.IdPosition).First().NamePosition</p>
                         <p class="subtitle">@worker.Email</p>
                         <p class="subtitle">@worker.WorkPhoneNumber</p>
                         <p class="subtitle">@(Convert.ToDateTime(_workersPrivateInfo.Where(x => x.IdWorker == worker.IdWorker).First().Birthday).ToString("M"))</p>

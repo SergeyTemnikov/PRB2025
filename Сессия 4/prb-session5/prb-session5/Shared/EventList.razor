@@ -5,19 +5,21 @@
     <div class="container overflow-auto listColorText" style="height: @StringHeight;">
         @foreach(var ev in _events)
         {
-            <div class="col eventCard textBox align-items-center align-content-between">
-                <div class="row"> 
-                    <p class="title">@ev.Title</p>
-                </div>
-                <div class="row">
-                    <p class="subtitle">@ev.Body</p>
-                </div>
-                <div class="row d-flex justify-content-between" style="padding-right: 5%;">
-                    <div class="col">
-                        <p class="subtitle">@ev.Date</p>
+            <div class="textBox eventCard d-flex">
+                <div class="d-flex flex-column justify-content-between">
+                    <div class="row"> 
+                        <p class="title">@ev.Title</p>
                     </div>
-                    <div class="col">
-                        <p class="subtitle" style="text-align: right;">@ev.Author</p>
+                    <div class="row">
+                        <p class="subtitle">@ev.Body</p>
+                    </div>
+                    <div class="row d-flex justify-content-between" style="padding-right: 5%;">
+                        <div class="col">
+                            <p class="subtitle">@ev.Date</p>
+                        </div>
+                        <div class="col">
+                            <p class="subtitle" style="text-align: right;">@ev.Author</p>
+                        </div>
                     </div>
                 </div>
             </div>

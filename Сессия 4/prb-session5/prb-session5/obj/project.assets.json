@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\prb-session5.csproj",
+      "projectUniqueName": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\prb-session5.csproj",
       "projectName": "prb-session5",
-      "projectPath": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\prb-session5.csproj",
+      "projectPath": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\prb-session5.csproj",
       "packagesPath": "C:\\Users\\satem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\obj\\",
+      "outputPath": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

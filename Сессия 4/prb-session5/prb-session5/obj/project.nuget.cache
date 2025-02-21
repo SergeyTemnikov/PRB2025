@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZISw7goMeEQ=",
+  "dgSpecHash": "qJChz8bmAzw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\prb-session5.csproj",
+  "projectFilePath": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\prb-session5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\satem\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\satem\\source\\repos\\prb-session5\\",
+  "WorkspaceRootPath": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\source\\repos\\prb-session5\\prb-session5\\shared\\workerslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\shared\\workerslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\shared\\newslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\shared\\newslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\source\\repos\\prb-session5\\prb-session5\\shared\\eventlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\shared\\eventlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\source\\repos\\prb-session5\\prb-session5\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,57 +22,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "prb-session5\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
               "RelativeToolTip": "prb-session5\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAFIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAF8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-02-20T07:43:23.877Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "prb-session5\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Pages\\Index.razor",
+              "RelativeToolTip": "prb-session5\\Pages\\Index.razor",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAswB4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T07:47:43.634Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WorkersList.razor",
-              "DocumentMoniker": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\Shared\\WorkersList.razor",
-              "RelativeDocumentMoniker": "prb-session5\\Shared\\WorkersList.razor",
-              "ToolTip": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\Shared\\WorkersList.razor",
-              "RelativeToolTip": "prb-session5\\Shared\\WorkersList.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABIAAAAAAAAAA==",
+              "Title": "NewsList.razor",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\NewsList.razor",
+              "RelativeDocumentMoniker": "prb-session5\\Shared\\NewsList.razor",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\NewsList.razor",
+              "RelativeToolTip": "prb-session5\\Shared\\NewsList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-18T04:58:32.319Z",
+              "WhenOpened": "2025-02-21T07:44:08.389Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EventList.razor",
-              "DocumentMoniker": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\Shared\\EventList.razor",
-              "RelativeDocumentMoniker": "prb-session5\\Shared\\EventList.razor",
-              "ToolTip": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\Shared\\EventList.razor",
-              "RelativeToolTip": "prb-session5\\Shared\\EventList.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-15T06:05:38.659Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\Pages\\Index.razor",
-              "RelativeDocumentMoniker": "prb-session5\\Pages\\Index.razor",
-              "ToolTip": "C:\\Users\\satem\\source\\repos\\prb-session5\\prb-session5\\Pages\\Index.razor",
-              "RelativeToolTip": "prb-session5\\Pages\\Index.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-12T07:47:43.634Z"
             }
           ]
         }

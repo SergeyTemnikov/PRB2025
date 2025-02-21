@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "WebRoadsApi\\Controllers\\WorkersController.cs",
               "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Controllers\\WorkersController.cs",
               "RelativeToolTip": "WebRoadsApi\\Controllers\\WorkersController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAAwDwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAYwDwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T07:27:53.23Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "WebRoadsApi\\Models\\Position.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T09:27:57.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T09:27:57.24Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "WebRoadsApi\\Models\\WorkerPrivateInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T05:00:23.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T05:00:23.783Z"
             },
             {
               "$type": "Document",
