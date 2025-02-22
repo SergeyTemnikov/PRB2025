@@ -79,3 +79,9 @@ C:\Users\satem\Desktop\PRB\Сессия 4\prb-session5\prb-session5\obj\Debug\ne
 C:\Users\satem\Desktop\PRB\Сессия 4\prb-session5\prb-session5\obj\Debug\net8.0\prb-session5.pdb
 C:\Users\satem\Desktop\PRB\Сессия 4\prb-session5\prb-session5\obj\Debug\net8.0\prb-session5.genruntimeconfig.cache
 C:\Users\satem\Desktop\PRB\Сессия 4\prb-session5\prb-session5\obj\Debug\net8.0\ref\prb-session5.dll
+C:\Users\satem\Desktop\PRB\Сессия 4\prb-session5\prb-session5\bin\Debug\net8.0\CodeHollow.FeedReader.dll
+C:\Users\satem\Desktop\PRB\Сессия 4\prb-session5\prb-session5\bin\Debug\net8.0\SimpleFeedReader.dll
+C:\Users\satem\Desktop\PRB\Сессия 4\prb-session5\prb-session5\bin\Debug\net8.0\System.ServiceModel.Syndication.dll
+C:\Users\satem\Desktop\PRB\Сессия 4\prb-session5\prb-session5\bin\Debug\net8.0\Blazored.LocalStorage.dll
+C:\Users\satem\Desktop\PRB\Сессия 4\prb-session5\prb-session5\bin\Debug\net8.0\HtmlAgilityPack.dll
+C:\Users\satem\Desktop\PRB\Сессия 4\prb-session5\prb-session5\bin\Debug\net8.0\QRCoder.dll

@@ -117,3 +117,23 @@ a, .btn-link {
     padding: 10px;
 }
 
+.popover {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 10px 0 0 20%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.popover-image {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
+.qr-code-popover {
+    cursor: pointer;
+    position: relative;
+}

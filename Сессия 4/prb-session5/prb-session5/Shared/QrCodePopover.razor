@@ -1,0 +1,24 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+
+<div class="@Class" @onclick="TogglePopover">
+    <span>@ChildContent</span>
+    @if (IsOpen)
+    {
+        <div class="popover">
+            <img src="data:image/png;base64,@Convert.ToBase64String(QrCodeBytes)" alt="QR Code" class="popover-image"/>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public string Class { get; set; } = "qr-code-popover";
+    [Parameter] public byte[] QrCodeBytes { get; set; }
+
+    private bool IsOpen { get; set; }
+
+    private void TogglePopover()
+    {
+        IsOpen = !IsOpen;
+    }
+}

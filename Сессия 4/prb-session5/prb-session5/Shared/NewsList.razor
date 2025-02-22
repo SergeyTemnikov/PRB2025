@@ -1,11 +1,14 @@
-﻿@if (_news != null)
+﻿@using CodeHollow.FeedReader
+@using CodeHollow.FeedReader.Feeds
+
+@if (_feed != null)
 {
-    <div class="container overflow-auto listColorText d-flex flex-wrap">
-        @foreach (var news in _news)
+    <div class="container overflow-auto listColorText d-flex flex-wrap" style="height: @StringHeight;">
+        @foreach (var news in _feed.Items)
         {
             <div class="newsCard d-flex flex-column">
                 <div class="h-50">
-                    <img src="@news.Picture" class="w-100 h-100" style="background-size:cover;"/>
+                    <img src="@GetImageUrl(news.SpecificItem)" class="w-100 h-100" style="background-size:cover;"/>
                 </div>
                 <div class="textBox h-50">
                     <div class="d-flex flex-column justify-content-between">
@@ -14,11 +17,11 @@
                                 <p class="title">@news.Title</p>
                             </div>
                             <div class="row">
-                                <p class="subtitle">@news.Body</p>
+                                <p class="subtitle">@news.Description</p>
                             </div>
                         </div>
                         <div>
-                            <p class="subtitle">@news.Date</p>
+                            <p class="subtitle">@Convert.ToDateTime(news.PublishingDate).ToString("d")</p>
                         </div>
                     </div>
                 </div>
@@ -31,18 +34,57 @@
 
 
 @code {
+    [Parameter] 
+    public int? Height { get; set; }
+    private string StringHeight
+    {
+        get
+        {
+            if (Height == null)
+            {
+                return "auto";
+            }
+            else
+            {
+                return $"{Height}px";
+            }
+        }
+    }
+
+    private Feed _feed;
+    private System.Threading.Timer _timer;
+
     protected override async Task OnInitializedAsync()
     {
         await FetchData();
-    }
 
-    private List<News> _news;
-    private HttpClient httpClient;
+        _timer = new System.Threading.Timer(async (_) =>
+        {
+            await InvokeAsync(async () =>
+            {
+                await FetchData();
+                Console.WriteLine("State Changed");
+                StateHasChanged(); 
+            });
+        }, null, TimeSpan.FromSeconds(15), TimeSpan.FromSeconds(15)); 
+    }
 
     private async Task FetchData()
     {
-        httpClient = new HttpClient();
+        _feed = await FeedReader.ReadAsync("https://lenta.ru/rss");
+    }
 
-        _news = await httpClient.GetFromJsonAsync<List<News>>("https://localhost:7208/api/News/GetNews");
+    private string GetImageUrl(BaseFeedItem specificItem)
+    {
+        if (specificItem is Rss20FeedItem rssItem && rssItem.Enclosure != null)
+        {
+            return rssItem.Enclosure.Url;
+        }
+        return "/path/to/default-image.jpg";
+    }
+
+    public void Dispose()
+    {
+        _timer?.Dispose();
     }
 }

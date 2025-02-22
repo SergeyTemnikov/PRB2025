@@ -1,4 +1,6 @@
-﻿
+﻿@using System.Text
+@inject IJSRuntime JSRuntime
+@inject NavigationManager Navigation
 
 @if(_events != null)
 {
@@ -18,7 +20,10 @@
                             <p class="subtitle">@ev.Date</p>
                         </div>
                         <div class="col">
-                            <p class="subtitle" style="text-align: right;">@ev.Author</p>
+                            <p class="subtitle">@ev.Author</p>
+                        </div>
+                        <div class="col">
+                            <button class="btn-success" @onclick="() => CreateIcsFile(ev)" style="height: 20px; width: 20px;">*</button>
                         </div>
                     </div>
                 </div>
@@ -27,6 +32,16 @@
     </div>
 }
 
+<script>
+        window.downloadFile = (fileName, contentType, content) => {
+        const link = document.createElement('a');
+        link.href = `data:${contentType};base64,${content}`;
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+</script>
 
 @code {
     [Parameter]
@@ -55,5 +70,33 @@
         httpClient = new HttpClient();
 
         _events = await httpClient.GetFromJsonAsync<List<Event>>("https://localhost:7208/api/Events/GetEvents");
+    }
+
+    private async Task CreateIcsFile(Event ev)
+    {
+        StringBuilder sb = new();
+        sb.AppendLine("BEGIN:VCALENDAR");
+        sb.AppendLine("VERSION:2.0");
+        sb.AppendLine("BEGIN:VEVENT");
+        sb.AppendLine($"SUMMARY:{ev.Title}");
+        sb.AppendLine($"DTSTART:{Convert.ToDateTime(ev.Date).ToString("yyyyMMddTHHmmssZ")}");
+        //Добавить время окончания и смещение
+        sb.AppendLine($"UID:{Guid.NewGuid()}");
+        sb.AppendLine($"DESCRIPTION:{ev.Body}");
+        sb.AppendLine($"LOCATION:RUSSIA");
+        sb.AppendLine($"ORGANIZER:{ev.Author}");
+        sb.AppendLine("STATUS:CONFIRMED");
+        sb.AppendLine("PRIORITY:0");
+        sb.AppendLine("END:VEVENT");
+        sb.AppendLine("END:VCALENDAR");
+
+        string calendarItem = sb.ToString();
+
+        string fileName = $"{ev.Title}.ics";
+
+        byte[] fileBytes = System.Text.Encoding.UTF8.GetBytes(calendarItem);
+        string base64Content = Convert.ToBase64String(fileBytes);
+
+        await JSRuntime.InvokeVoidAsync("downloadFile", fileName, "text/calendar", base64Content);
     }
 }

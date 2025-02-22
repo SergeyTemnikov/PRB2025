@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("prb-session5")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5ae400b90b6967cfa20cece1ba22a3a35d33dbf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e1da7c14af98a76b80d0a95df3dfadc63d39b36")]
 [assembly: System.Reflection.AssemblyProductAttribute("prb-session5")]
 [assembly: System.Reflection.AssemblyTitleAttribute("prb-session5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
