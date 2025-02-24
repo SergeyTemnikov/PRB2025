@@ -137,3 +137,9 @@ a, .btn-link {
     cursor: pointer;
     position: relative;
 }
+
+.main-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}

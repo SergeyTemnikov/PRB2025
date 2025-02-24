@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "P9+4lhnboPbhmSBMQ1VacxSCi6/QAQi/hQcbeZhXedE=",
+  "Hash": "xq5o0O52hcQe1zLHJWuvAtaao9iGUp57znx415JGU3I=",
   "Source": "prb-session5",
   "BasePath": "_content/prb-session5",
   "Mode": "Default",
@@ -304,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xyrj2lavyg",
-      "Integrity": "p9UMOekCGgmkhwxT+yBeLttUNvU4HveheXgeWVn6hSY=",
+      "Fingerprint": "154183icij",
+      "Integrity": "Nd8ldyugLBIYx3b8BX3PRFjiz9f1iwmoRmwD3KbwukA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1257,6 +1257,51 @@
       ]
     },
     {
+      "Route": "css/site.154183icij.css",
+      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4114"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nd8ldyugLBIYx3b8BX3PRFjiz9f1iwmoRmwD3KbwukA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 05:10:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "154183icij"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nd8ldyugLBIYx3b8BX3PRFjiz9f1iwmoRmwD3KbwukA="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1267,7 +1312,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3910"
+          "Value": "4114"
         },
         {
           "Name": "Content-Type",
@@ -1275,11 +1320,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"p9UMOekCGgmkhwxT+yBeLttUNvU4HveheXgeWVn6hSY=\""
+          "Value": "\"Nd8ldyugLBIYx3b8BX3PRFjiz9f1iwmoRmwD3KbwukA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 09:27:27 GMT"
+          "Value": "Mon, 24 Feb 2025 05:10:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1289,52 +1334,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-p9UMOekCGgmkhwxT+yBeLttUNvU4HveheXgeWVn6hSY="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.xyrj2lavyg.css",
-      "AssetFile": "C:\\Users\\satem\\Desktop\\PRB\\Сессия 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3910"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"p9UMOekCGgmkhwxT+yBeLttUNvU4HveheXgeWVn6hSY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 09:27:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xyrj2lavyg"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-p9UMOekCGgmkhwxT+yBeLttUNvU4HveheXgeWVn6hSY="
+          "Value": "sha256-Nd8ldyugLBIYx3b8BX3PRFjiz9f1iwmoRmwD3KbwukA="
         }
       ]
     },

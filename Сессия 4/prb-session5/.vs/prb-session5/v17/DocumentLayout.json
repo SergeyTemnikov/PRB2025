@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\shared\\qrcodepopover.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\shared\\qrcodepopover.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\shared\\workerslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\shared\\workerslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "prb-session5\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
               "RelativeToolTip": "prb-session5\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAAAIIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAIwAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-02-20T07:43:23.877Z",
               "IsPinned": true,
@@ -44,13 +40,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "prb-session5\\Pages\\Index.razor",
               "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Pages\\Index.razor",
               "RelativeToolTip": "prb-session5\\Pages\\Index.razor",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAswB8AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-12T07:47:43.634Z",
               "IsPinned": true,
@@ -58,26 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QrCodePopover.razor",
-              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\QrCodePopover.razor",
-              "RelativeDocumentMoniker": "prb-session5\\Shared\\QrCodePopover.razor",
-              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\QrCodePopover.razor",
-              "RelativeToolTip": "prb-session5\\Shared\\QrCodePopover.razor",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T09:31:52.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "WorkersList.razor",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\WorkersList.razor",
               "RelativeDocumentMoniker": "prb-session5\\Shared\\WorkersList.razor",
               "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\WorkersList.razor",
               "RelativeToolTip": "prb-session5\\Shared\\WorkersList.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-22T09:02:03.082Z",
               "EditorCaption": ""
