@@ -14,25 +14,40 @@
 </nav>
 
 <div class="container-fluid d-flex flex-column">
-    <div class="col">
+    <div class="col m-3">
         <p class="main-title">
             Сотрудники
         </p>
-        <div class="col d-flex justify-content-center">
+        <div class="col d-flex justify-content-start">
             <WorkersList></WorkersList>
         </div>
     </div>
     <div class="col d-flex">
         <div style="width: 500px;">
-            <div class="container-fluid d-flex justify-content-center">
-                <Calendar></Calendar>
+            <div class="col m-3">
+                <p class="main-title">
+                    Календарь событий
+                </p>
+                <div class="col d-flex justify-content-center">
+                    <Calendar></Calendar>
+                </div>
             </div>
-            <div class="container-fluid">
-                <EventList Height="450"></EventList>
+            <div class="col m-3">
+                <p class="main-title">
+                    События
+                </p>
+                <div class="col d-flex justify-content-center">
+                    <EventList Height="450"></EventList>
+                </div>
             </div>
         </div>
-        <div style="width: 850px;">
-            <NewsList Height="700"></NewsList>
+        <div class="col m-3">
+            <p class="main-title">
+                Новости
+            </p>
+            <div class="col d-flex justify-content-center">
+                <NewsList Height="700"></NewsList>
+            </div>
         </div>
     </div>
 </div>

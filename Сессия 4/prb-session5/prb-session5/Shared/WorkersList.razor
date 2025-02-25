@@ -6,7 +6,7 @@
 
 @if(_workers != null)
 {
-    <div class="overflow-auto container" style="width: @StringWidth;">
+    <div class="overflow-auto d-flex justify-content-start" style="width: @StringWidth;">
         @foreach (var worker in _workers)
         {
             <QrCodePopover QrCodeBytes="ShowQRCode(worker)">
