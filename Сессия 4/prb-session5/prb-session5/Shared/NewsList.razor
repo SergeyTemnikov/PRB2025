@@ -7,10 +7,10 @@
         @foreach (var news in _feed.Items)
         {
             <div class="newsCard d-flex flex-column">
-                <div class="h-50">
+                <div class="h-75">
                     <img src="@GetImageUrl(news.SpecificItem)" class="w-100 h-100" style="background-size:cover;"/>
                 </div>
-                <div class="textBox h-50">
+                <div class="textBox h-25">
                     <div class="d-flex flex-column justify-content-between">
                         <div>
                             <div class="row">
@@ -20,8 +20,9 @@
                                 <p class="subtitle">@news.Description</p>
                             </div>
                         </div>
-                        <div>
+                        <div class="d-flex flex-row flex-nowrap justify-content-between">
                             <p class="subtitle">@Convert.ToDateTime(news.PublishingDate).ToString("d")</p>
+                            <a href="@news.Link" class="btn-success">Перейти на новость</a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +43,7 @@
         {
             if (Height == null)
             {
-                return "auto";
+                return "100%";
             }
             else
             {

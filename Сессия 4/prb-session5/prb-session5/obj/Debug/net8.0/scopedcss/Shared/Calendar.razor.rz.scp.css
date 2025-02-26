@@ -1,6 +1,5 @@
 .calendar[b-rfb55s7drx] {
     display: grid;
-    width: 300px;
 }
 
 .header[b-rfb55s7drx] {
@@ -24,20 +23,20 @@
 }
 
 .monthly-day[b-rfb55s7drx] {
-    width: auto;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background-color: white;
-    padding: 1px;
+    padding: 5px;
     text-align: center;
     vertical-align: middle;
 }
 
 .day-content[b-rfb55s7drx] {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 75%;
+    height: 75%;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 18px;
     box-sizing: border-box;
     color: #6d7377;
     border-radius: 50%;
@@ -63,11 +62,11 @@
 }
 
 .header-name[b-rfb55s7drx] {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     vertical-align: middle;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 

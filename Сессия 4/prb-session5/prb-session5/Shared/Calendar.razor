@@ -1,4 +1,4 @@
-﻿<div class="calendar">
+﻿<div class="calendar col m-3">
     <div class="header">
         <button class="header-button" @onclick="PreviousMonth">@before</button>
         <span>@CurrentDateString</span>
@@ -49,7 +49,7 @@
                                         cssClass += " today";
                                     }
                                     <td>
-                                        <div class="fade-in monthly-day noselect">
+                                        <div class="fade-in monthly-day noselect d-flex flex-row justify-content-center align-items-center">
                                             @if (IsBirthday(DayCounter))
                                             {
                                                 <span class="@cssClass">🎂</span>

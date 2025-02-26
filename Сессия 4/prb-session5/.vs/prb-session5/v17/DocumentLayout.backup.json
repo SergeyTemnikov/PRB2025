@@ -35,8 +35,7 @@
               "ViewState": "AgIAAHEAAAAAAAAAAAAAAJAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-02-20T07:43:23.877Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -46,7 +45,7 @@
               "RelativeDocumentMoniker": "prb-session5\\Pages\\Index.razor",
               "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Pages\\Index.razor",
               "RelativeToolTip": "prb-session5\\Pages\\Index.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswDMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-12T07:47:43.634Z",
               "IsPinned": true,
@@ -62,8 +61,7 @@
               "RelativeToolTip": "prb-session5\\Shared\\WorkersList.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T09:02:03.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T09:02:03.082Z"
             }
           ]
         }

@@ -93,14 +93,14 @@ a, .btn-link {
 }
 
 .newsCard {
-    width: 350px;
-    height: 250px;
+    width: 550px;
+    height: 350px;
     margin: 10px;
-    padding-left: 5%;
+    padding-left: 2%;
 }
 
 .title {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     margin: 0px;
 }
