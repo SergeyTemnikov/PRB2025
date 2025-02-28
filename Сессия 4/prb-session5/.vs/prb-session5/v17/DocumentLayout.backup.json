@@ -7,12 +7,24 @@
       "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\shared\\workerslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\shared\\workerslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\shared\\newslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\shared\\newslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\shared\\calendar.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\shared\\calendar.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\shared\\calendar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\shared\\calendar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\shared\\workerslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\shared\\workerslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,10 +44,11 @@
               "RelativeDocumentMoniker": "prb-session5\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
               "RelativeToolTip": "prb-session5\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAAAJAAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAGAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-02-20T07:43:23.877Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -45,7 +58,7 @@
               "RelativeDocumentMoniker": "prb-session5\\Pages\\Index.razor",
               "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Pages\\Index.razor",
               "RelativeToolTip": "prb-session5\\Pages\\Index.razor",
-              "ViewState": "AgIAABYAAAAAAAAAAAAswDMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-12T07:47:43.634Z",
               "IsPinned": true,
@@ -54,6 +67,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "NewsList.razor",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\NewsList.razor",
+              "RelativeDocumentMoniker": "prb-session5\\Shared\\NewsList.razor",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\NewsList.razor",
+              "RelativeToolTip": "prb-session5\\Shared\\NewsList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T08:41:47.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Calendar.razor.css",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\Calendar.razor.css",
+              "RelativeDocumentMoniker": "prb-session5\\Shared\\Calendar.razor.css",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\Calendar.razor.css",
+              "RelativeToolTip": "prb-session5\\Shared\\Calendar.razor.css",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-26T07:31:17.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Calendar.razor",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\Calendar.razor",
+              "RelativeDocumentMoniker": "prb-session5\\Shared\\Calendar.razor",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\Calendar.razor",
+              "RelativeToolTip": "prb-session5\\Shared\\Calendar.razor",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T07:30:55.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "WorkersList.razor",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\WorkersList.razor",
               "RelativeDocumentMoniker": "prb-session5\\Shared\\WorkersList.razor",

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|c:\\users\\satem\\desktop\\prb\\\u0441\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8E0EE8D5-F5D3-4F90-85BD-FF1448599C5A}|prb-session5\\prb-session5.csproj|solutionrelative:prb-session5\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -34,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "prb-session5\\wwwroot\\css\\site.css",
@@ -47,12 +51,11 @@
               "ViewState": "AgIAAEQAAAAAAAAAAAAAAGAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-02-20T07:43:23.877Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "prb-session5\\Pages\\Index.razor",
@@ -66,7 +69,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "prb-session5\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Properties\\launchSettings.json",
+              "RelativeToolTip": "prb-session5\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-28T08:17:12.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "NewsList.razor",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\NewsList.razor",
               "RelativeDocumentMoniker": "prb-session5\\Shared\\NewsList.razor",
@@ -74,12 +90,11 @@
               "RelativeToolTip": "prb-session5\\Shared\\NewsList.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T08:41:47.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T08:41:47.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Calendar.razor.css",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\Calendar.razor.css",
               "RelativeDocumentMoniker": "prb-session5\\Shared\\Calendar.razor.css",
@@ -87,12 +102,11 @@
               "RelativeToolTip": "prb-session5\\Shared\\Calendar.razor.css",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-26T07:31:17.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T07:31:17.821Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Calendar.razor",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\Calendar.razor",
               "RelativeDocumentMoniker": "prb-session5\\Shared\\Calendar.razor",
@@ -100,12 +114,11 @@
               "RelativeToolTip": "prb-session5\\Shared\\Calendar.razor",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T07:30:55.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T07:30:55.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "WorkersList.razor",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u0421\u0435\u0441\u0441\u0438\u044F 4\\prb-session5\\prb-session5\\Shared\\WorkersList.razor",
               "RelativeDocumentMoniker": "prb-session5\\Shared\\WorkersList.razor",

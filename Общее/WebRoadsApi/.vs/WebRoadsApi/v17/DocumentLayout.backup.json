@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\desktop\\prb\\\u043E\u0431\u0449\u0435\u0435\\webroadsapi\\webroadsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|solutionrelative:webroadsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\desktop\\prb\\\u043E\u0431\u0449\u0435\u0435\\webroadsapi\\webroadsapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|solutionrelative:webroadsapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\desktop\\prb\\\u043E\u0431\u0449\u0435\u0435\\webroadsapi\\webroadsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|solutionrelative:webroadsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\desktop\\prb\\\u043E\u0431\u0449\u0435\u0435\\webroadsapi\\webroadsapi\\controllers\\workerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|solutionrelative:webroadsapi\\controllers\\workerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\desktop\\prb\\\u043E\u0431\u0449\u0435\u0435\\webroadsapi\\webroadsapi\\models\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|solutionrelative:webroadsapi\\models\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\desktop\\prb\\\u043E\u0431\u0449\u0435\u0435\\webroadsapi\\webroadsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|solutionrelative:webroadsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F34F7A4-670C-429B-8E5A-43F31B165DA1}|WebRoadsApi\\WebRoadsApi.csproj|c:\\users\\satem\\desktop\\prb\\\u043E\u0431\u0449\u0435\u0435\\webroadsapi\\webroadsapi\\controllers\\eventnewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,12 +47,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\appsettings.json",
+              "RelativeDocumentMoniker": "WebRoadsApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\appsettings.json",
+              "RelativeToolTip": "WebRoadsApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-28T08:23:26.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebRoadsApi\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebRoadsApi\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T04:44:57.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "WorkersController.cs",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Controllers\\WorkersController.cs",
               "RelativeDocumentMoniker": "WebRoadsApi\\Controllers\\WorkersController.cs",
               "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Controllers\\WorkersController.cs",
               "RelativeToolTip": "WebRoadsApi\\Controllers\\WorkersController.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAAwIMAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwIEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T07:27:53.23Z",
               "EditorCaption": ""
@@ -52,6 +86,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Program.cs",
+              "RelativeDocumentMoniker": "WebRoadsApi\\Program.cs",
+              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Program.cs",
+              "RelativeToolTip": "WebRoadsApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T10:30:16.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Position.cs",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Models\\Position.cs",
               "RelativeDocumentMoniker": "WebRoadsApi\\Models\\Position.cs",
@@ -59,11 +106,12 @@
               "RelativeToolTip": "WebRoadsApi\\Models\\Position.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T09:27:57.24Z"
+              "WhenOpened": "2025-02-18T09:27:57.24Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "WorkerPrivateInfo.cs",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Models\\WorkerPrivateInfo.cs",
               "RelativeDocumentMoniker": "WebRoadsApi\\Models\\WorkerPrivateInfo.cs",
@@ -71,35 +119,25 @@
               "RelativeToolTip": "WebRoadsApi\\Models\\WorkerPrivateInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T05:00:23.783Z"
+              "WhenOpened": "2025-02-18T05:00:23.783Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Worker.cs",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Models\\Worker.cs",
               "RelativeDocumentMoniker": "WebRoadsApi\\Models\\Worker.cs",
               "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Models\\Worker.cs",
               "RelativeToolTip": "WebRoadsApi\\Models\\Worker.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T04:59:25.103Z"
+              "WhenOpened": "2025-02-18T04:59:25.103Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Program.cs",
-              "RelativeDocumentMoniker": "WebRoadsApi\\Program.cs",
-              "ToolTip": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Program.cs",
-              "RelativeToolTip": "WebRoadsApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T10:30:16.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "EventNewsController.cs",
               "DocumentMoniker": "C:\\Users\\satem\\Desktop\\PRB\\\u041E\u0431\u0449\u0435\u0435\\WebRoadsApi\\WebRoadsApi\\Controllers\\EventNewsController.cs",
               "RelativeDocumentMoniker": "WebRoadsApi\\Controllers\\EventNewsController.cs",
@@ -107,7 +145,8 @@
               "RelativeToolTip": "WebRoadsApi\\Controllers\\EventNewsController.cs",
               "ViewState": "AgIAAF8AAAAAAAAAAAAIwH8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T09:02:46.432Z"
+              "WhenOpened": "2025-02-12T09:02:46.432Z",
+              "EditorCaption": ""
             }
           ]
         }

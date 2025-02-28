@@ -363,3 +363,5 @@ C:\Users\satem\Desktop\PRB\Общее\WebRoadsApi\WebRoadsApi\obj\Debug\net8.0\r
 C:\Users\satem\Desktop\PRB\Общее\WebRoadsApi\WebRoadsApi\obj\Debug\net8.0\WebRoadsApi.pdb
 C:\Users\satem\Desktop\PRB\Общее\WebRoadsApi\WebRoadsApi\obj\Debug\net8.0\WebRoadsApi.genruntimeconfig.cache
 C:\Users\satem\Desktop\PRB\Общее\WebRoadsApi\WebRoadsApi\obj\Debug\net8.0\ref\WebRoadsApi.dll
+C:\Users\satem\Desktop\PRB\Общее\WebRoadsApi\WebRoadsApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\satem\Desktop\PRB\Общее\WebRoadsApi\WebRoadsApi\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll

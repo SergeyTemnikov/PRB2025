@@ -92,6 +92,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebRoadsApi.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebRoadsApi.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebRoadsApi.Controllers.PositionController",
     "Method": "GetPositions",
     "RelativePath": "Position/GetPositions",

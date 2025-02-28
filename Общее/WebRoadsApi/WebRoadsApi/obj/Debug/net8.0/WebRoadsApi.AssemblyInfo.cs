@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebRoadsApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+039533d5728e37fe66fff31e4fd12782a49866dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac00ce389f13734fcb221fb562eafec945db1ec4")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebRoadsApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebRoadsApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
