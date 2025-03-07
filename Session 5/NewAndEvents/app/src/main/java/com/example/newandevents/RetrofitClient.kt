@@ -8,7 +8,7 @@ import javax.net.ssl.SSLContext
 import javax.net.ssl.SSLSocketFactory
 
 object RetrofitClient {
-    private const val BASE_URL = "https://10.0.2.2:7011"// Замените на ваш базовый URL
+    private const val BASE_URL = "https://10.0.2.2:7208"// Замените на ваш базовый URL
     val instance: NewsAndEventsApi by lazy {
         val client = OkHttpClient.Builder()
             .sslSocketFactory(createSSLSocketFactory(), CustomTrustManager())

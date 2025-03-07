@@ -7,15 +7,15 @@ import retrofit2.http.PUT
 import retrofit2.http.Query
 
 interface NewsAndEventsApi{
-    @GET("/WebApiNews/GetEvents")
+    @GET("/api/Events/GetEvents")
     fun getEvents(): Call<List<Event>>
 
-    @GET("/WebApiNews/GetNews")
+    @GET("/api/News/GetNews")
     fun getNews(): Call<List<News>>
 
-    @PUT("/WebApiNews/PostPositiveReactions")
+    @PUT("/api/News/PostPositiveReactions")
     fun updatePositiveReactions(@Query("id") id: Int): Call<News>
 
-    @PUT("/WebApiNews/PostNegativeReactions")
+    @PUT("/api/News/PostNegativeReactions")
     fun updateNegativeReactions(@Query("id") id: Int): Call<News>
 }

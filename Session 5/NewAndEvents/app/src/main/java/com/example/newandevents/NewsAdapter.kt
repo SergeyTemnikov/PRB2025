@@ -45,8 +45,6 @@ class NewsAdapter(private val context: Context, private var list: List<News>) : 
     override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
         val news = list[position]
 
-        Log.d("NewsAdapter", "Binding event at position $position: ${news.getTitle()}")
-
         holder.textTitle.text = news.getTitle()
         holder.textBody.text = news.getBody()
         holder.textPositiveReactions.text = news.getPosReactions()
@@ -86,7 +84,7 @@ class NewsAdapter(private val context: Context, private var list: List<News>) : 
                     override fun onResponse(call: Call<News>, response: Response<News>) {
                         if (response.isSuccessful) {
                             val updatedNews  = response.body()
-                            newList = list.toSet().toSet().toMutableList()
+                            newList = list.toSet().toMutableList()
                             if (updatedNews != null) {
                                 newList[position] = updatedNews
                             }
